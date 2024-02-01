@@ -1,0 +1,1226 @@
+"C:\Program Files\Java\jdk1.8.0_281\bin\java.exe" "-javaagent:G:\IDE\IntelliJ IDEA 2023.2.1\lib\idea_rt.jar=63723:G:\IDE\IntelliJ IDEA 2023.2.1\bin" -Dfile.encoding=UTF-8 -classpath "G:\FLASH-MAS\bin;G:\FLASH-MAS\lib\json-simple-1.1.1.jar;G:\FLASH-MAS\lib\ros\websocket-client-9.4.3.v20170317.jar;G:\FLASH-MAS\lib\ros\websocket-common-9.4.3.v20170317.jar;G:\FLASH-MAS\lib\mpi\mpi.jar;G:\FLASH-MAS\lib\core\Config.jar;G:\FLASH-MAS\lib\core\gson-2.8.6.jar;G:\FLASH-MAS\lib\core\Logging-modern.jar;G:\FLASH-MAS\lib\core\net.xqhs.XML.jar;G:\FLASH-MAS\lib\ros\jetty-io-9.4.3.v20170317.jar;G:\FLASH-MAS\lib\ros\jetty-client-9.4.3.v20170317.jar;G:\FLASH-MAS\lib\ros\jetty-http-9.4.3.v20170317.jar;G:\FLASH-MAS\lib\ros\jetty-util-9.4.3.v20170317.jar;G:\FLASH-MAS\lib\gui\snakeyaml-1.25.jar;G:\FLASH-MAS\lib\ros\websocket-api-9.4.3.v20170317.jar;G:\FLASH-MAS\lib\webserver\netty-all-4.1.47.Final.jar;G:\FLASH-MAS\lib\webserver\vertx-core-3.9.0.jar;G:\FLASH-MAS\lib\webserver\vertx-web-3.9.0.jar;G:\FLASH-MAS\lib\webserver\vertx-web-common-3.9.0.jar;G:\FLASH-MAS\lib\webserver\vertx-tcp-eventbus-bridge-3.9.0.jar;G:\FLASH-MAS\lib\webserver\vertx-bridge-common-3.9.0.jar;G:\FLASH-MAS\lib\webserver\jackson-annotations-2.10.2.jar;G:\FLASH-MAS\lib\webserver\jackson-core-2.10.2.jar;G:\FLASH-MAS\lib\webserver\jackson-databind-2.10.2.jar;G:\FLASH-MAS\lib\websocket\Java-WebSocket-1.4.0-with-dependencies.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\rt.jar" test.compositeMobility.Boot
+. [ boot ] Booting Flash-MAS.
+* [ settings load ] Category [package] not found elsewhere in the hierarchy; adding in current context.
+* [ settings load ] Category [loader] not found elsewhere in the hierarchy; adding in current context.
+> [ settings load ] removed auto-created [NODE] entity [null] to replace with entity [nodeA].
+> [ settings load ] final config:[
+   [deployment]-
+   .     [null]-
+   .     .     [#local-id]-      [#1705736037]
+   .     .     [#category-type]- [deployment]
+   .     .     [schema]-         [src-schema/deployment-schema.xsd]
+   .     .     [load_order]-     [pylon;agent]
+   .     .     [node]-
+   .     .     .     [nodeA]>
+   .     .     .     .     [name]>           [nodeA]
+   .     .     .     .     [#local-id]-      [#1831932724]
+   .     .     .     .     [#category-type]- [node]
+   .     .     .     .     [pylon]-
+   .     .     .     .     .     [webSocket:pylonA]>
+   .     .     .     .     .     .     [name]>           [webSocket:pylonA]
+   .     .     .     .     .     .     [#local-id]-      [#1747585824]
+   .     .     .     .     .     .     [#category-type]- [pylon]
+   .     .     .     .     .     .     [serverPort]>     [8988]
+   .     .     .     .     .     .     [agent]-
+   .     .     .     .     .     .     .     [mobileComposite:agentA1]>
+   .     .     .     .     .     .     .     .     [name]>           [mobileComposite:agentA1]
+   .     .     .     .     .     .     .     .     [#local-id]-      [#1023892928]
+   .     .     .     .     .     .     .     .     [#category-type]- [agent]
+   .     .     .     .     .     .     .     .     [shard]-
+   .     .     .     .     .     .     .     .     .     [messaging]>
+   .     .     .     .     .     .     .     .     .     .     [name]>           [messaging]
+   .     .     .     .     .     .     .     .     .     .     [#local-id]-      [#558638686]
+   .     .     .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     .     .     [in-context-of]>  [#1023892928, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     .     .     .     .     [EchoTesting]>
+   .     .     .     .     .     .     .     .     .     .     [name]>           [EchoTesting]
+   .     .     .     .     .     .     .     .     .     .     [#local-id]-      [#1149319664]
+   .     .     .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     .     .     [in-context-of]>  [#1023892928, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     .     .     .     .     [MobilityTest]>
+   .     .     .     .     .     .     .     .     .     .     [name]>           [MobilityTest]
+   .     .     .     .     .     .     .     .     .     .     [#local-id]-      [#2093631819]
+   .     .     .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     .     .     [to]>             [nodeB]
+   .     .     .     .     .     .     .     .     .     .     [time]>           [5000]
+   .     .     .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     .     .     [in-context-of]>  [#1023892928, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     .     .     .     .     [PingTest]>
+   .     .     .     .     .     .     .     .     .     .     [name]>           [PingTest]
+   .     .     .     .     .     .     .     .     .     .     [#local-id]-      [#2074407503]
+   .     .     .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     .     .     [every]>          [500]
+   .     .     .     .     .     .     .     .     .     .     [n]>              [10]
+   .     .     .     .     .     .     .     .     .     .     [otherAgent]>     [agentB1, agentA2]
+   .     .     .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     .     .     [in-context-of]>  [#1023892928, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     [in-context-of]>  [#1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     .     .     [agentA2]>
+   .     .     .     .     .     .     .     .     [name]>           [agentA2]
+   .     .     .     .     .     .     .     .     [#local-id]-      [#999966131]
+   .     .     .     .     .     .     .     .     [#category-type]- [agent]
+   .     .     .     .     .     .     .     .     [shard]-
+   .     .     .     .     .     .     .     .     .     [messaging]>
+   .     .     .     .     .     .     .     .     .     .     [name]>           [messaging]
+   .     .     .     .     .     .     .     .     .     .     [#local-id]-      [#1989780873]
+   .     .     .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     .     .     [in-context-of]>  [#999966131, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     .     .     .     .     [EchoTesting]>
+   .     .     .     .     .     .     .     .     .     .     [name]>           [EchoTesting]
+   .     .     .     .     .     .     .     .     .     .     [#local-id]-      [#1480010240]
+   .     .     .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     .     .     [in-context-of]>  [#999966131, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     .     .     .     .     [PingBackTest]>
+   .     .     .     .     .     .     .     .     .     .     [name]>           [PingBackTest]
+   .     .     .     .     .     .     .     .     .     .     [#local-id]-      [#81628611]
+   .     .     .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     .     .     [in-context-of]>  [#999966131, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     [in-context-of]>  [#1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#1831932724, #1705736037]
+   .     .     .     .     .     [local:default]>
+   .     .     .     .     .     .     [name]>           [local:default]
+   .     .     .     .     .     .     [#local-id]-      [#2129789493]
+   .     .     .     .     .     .     [#category-type]- [pylon]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#1831932724, #1705736037]
+   .     .     .     .     [load_order]-     [pylon;agent]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [loader]-
+   .     .     .     .     .     [agent:composite]>
+   .     .     .     .     .     .     [name]>           [agent:composite]
+   .     .     .     .     .     .     [#local-id]-      [#668386784]
+   .     .     .     .     .     .     [#category-type]- [loader]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#1831932724, #1705736037]
+   .     .     .     .     .     [agent:mobileComposite]>
+   .     .     .     .     .     .     [name]>           [agent:mobileComposite]
+   .     .     .     .     .     .     [#local-id]-      [#1329552164]
+   .     .     .     .     .     .     [#category-type]- [loader]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#1831932724, #1705736037]
+   .     .     .     .     [in-context-of]>  [#1705736037]
+   .     .     .     [nodeB]>
+   .     .     .     .     [name]>           [nodeB]
+   .     .     .     .     [#local-id]-      [#1828972342]
+   .     .     .     .     [#category-type]- [node]
+   .     .     .     .     [pylon]-
+   .     .     .     .     .     [webSocket:pylonB]>
+   .     .     .     .     .     .     [name]>           [webSocket:pylonB]
+   .     .     .     .     .     .     [#local-id]-      [#1452126962]
+   .     .     .     .     .     .     [#category-type]- [pylon]
+   .     .     .     .     .     .     [connectTo]>      [ws://localhost:8988]
+   .     .     .     .     .     .     [agent]-
+   .     .     .     .     .     .     .     [agentB1]>
+   .     .     .     .     .     .     .     .     [name]>           [agentB1]
+   .     .     .     .     .     .     .     .     [#local-id]-      [#931919113]
+   .     .     .     .     .     .     .     .     [#category-type]- [agent]
+   .     .     .     .     .     .     .     .     [shard]-
+   .     .     .     .     .     .     .     .     .     [messaging]>
+   .     .     .     .     .     .     .     .     .     .     [name]>           [messaging]
+   .     .     .     .     .     .     .     .     .     .     [#local-id]-      [#1607521710]
+   .     .     .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     .     .     [in-context-of]>  [#931919113, #1452126962, #1828972342, #1705736037]
+   .     .     .     .     .     .     .     .     .     [EchoTesting]>
+   .     .     .     .     .     .     .     .     .     .     [name]>           [EchoTesting]
+   .     .     .     .     .     .     .     .     .     .     [#local-id]-      [#764977973]
+   .     .     .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     .     .     [in-context-of]>  [#931919113, #1452126962, #1828972342, #1705736037]
+   .     .     .     .     .     .     .     .     .     [PingBackTest]>
+   .     .     .     .     .     .     .     .     .     .     [name]>           [PingBackTest]
+   .     .     .     .     .     .     .     .     .     .     [#local-id]-      [#381259350]
+   .     .     .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     .     .     [in-context-of]>  [#931919113, #1452126962, #1828972342, #1705736037]
+   .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     [in-context-of]>  [#1452126962, #1828972342, #1705736037]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#1828972342, #1705736037]
+   .     .     .     .     .     [local:default]>
+   .     .     .     .     .     .     [name]>           [local:default]
+   .     .     .     .     .     .     [#local-id]-      [#363771819]
+   .     .     .     .     .     .     [#category-type]- [pylon]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#1828972342, #1705736037]
+   .     .     .     .     [load_order]-     [pylon;agent]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [loader]-
+   .     .     .     .     .     [agent:composite]>
+   .     .     .     .     .     .     [name]>           [agent:composite]
+   .     .     .     .     .     .     [#local-id]-      [#2065951873]
+   .     .     .     .     .     .     [#category-type]- [loader]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#1828972342, #1705736037]
+   .     .     .     .     .     [agent:mobileComposite]>
+   .     .     .     .     .     .     [name]>           [agent:mobileComposite]
+   .     .     .     .     .     .     [#local-id]-      [#1791741888]
+   .     .     .     .     .     .     [#category-type]- [loader]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#1828972342, #1705736037]
+   .     .     .     .     [in-context-of]>  [#1705736037]
+   .     .     [pylon]-
+   .     .     .     [local:default]>
+   .     .     .     .     [name]>           [local:default]
+   .     .     .     .     [#local-id]-      [#250421012]
+   .     .     .     .     [#category-type]- [pylon]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#1705736037]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [loader]-
+   .     .     .     [agent:composite]>
+   .     .     .     .     [name]>           [agent:composite]
+   .     .     .     .     [#local-id]-      [#1096979270]
+   .     .     .     .     [#category-type]- [loader]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#1705736037]
+   .     .     .     [agent:mobileComposite]>
+   .     .     .     .     [name]>           [agent:mobileComposite]
+   .     .     .     .     [#local-id]-      [#1078694789]
+   .     .     .     .     [#category-type]- [loader]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#1705736037]
+   [#local-id]-
+   .     [#1705736037]-
+   .     .     [#local-id]-      [#1705736037]
+   .     .     [#category-type]- [deployment]
+   .     .     [schema]-         [src-schema/deployment-schema.xsd]
+   .     .     [load_order]-     [pylon;agent]
+   .     .     [node]-
+   .     .     .     [nodeA]>
+   .     .     .     .     [name]>           [nodeA]
+   .     .     .     .     [#local-id]-      [#1831932724]
+   .     .     .     .     [#category-type]- [node]
+   .     .     .     .     [pylon]-
+   .     .     .     .     .     [webSocket:pylonA]>
+   .     .     .     .     .     .     [name]>           [webSocket:pylonA]
+   .     .     .     .     .     .     [#local-id]-      [#1747585824]
+   .     .     .     .     .     .     [#category-type]- [pylon]
+   .     .     .     .     .     .     [serverPort]>     [8988]
+   .     .     .     .     .     .     [agent]-
+   .     .     .     .     .     .     .     [mobileComposite:agentA1]>
+   .     .     .     .     .     .     .     .     [name]>           [mobileComposite:agentA1]
+   .     .     .     .     .     .     .     .     [#local-id]-      [#1023892928]
+   .     .     .     .     .     .     .     .     [#category-type]- [agent]
+   .     .     .     .     .     .     .     .     [shard]-
+   .     .     .     .     .     .     .     .     .     [messaging]>
+   .     .     .     .     .     .     .     .     .     .     [name]>           [messaging]
+   .     .     .     .     .     .     .     .     .     .     [#local-id]-      [#558638686]
+   .     .     .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     .     .     [in-context-of]>  [#1023892928, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     .     .     .     .     [EchoTesting]>
+   .     .     .     .     .     .     .     .     .     .     [name]>           [EchoTesting]
+   .     .     .     .     .     .     .     .     .     .     [#local-id]-      [#1149319664]
+   .     .     .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     .     .     [in-context-of]>  [#1023892928, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     .     .     .     .     [MobilityTest]>
+   .     .     .     .     .     .     .     .     .     .     [name]>           [MobilityTest]
+   .     .     .     .     .     .     .     .     .     .     [#local-id]-      [#2093631819]
+   .     .     .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     .     .     [to]>             [nodeB]
+   .     .     .     .     .     .     .     .     .     .     [time]>           [5000]
+   .     .     .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     .     .     [in-context-of]>  [#1023892928, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     .     .     .     .     [PingTest]>
+   .     .     .     .     .     .     .     .     .     .     [name]>           [PingTest]
+   .     .     .     .     .     .     .     .     .     .     [#local-id]-      [#2074407503]
+   .     .     .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     .     .     [every]>          [500]
+   .     .     .     .     .     .     .     .     .     .     [n]>              [10]
+   .     .     .     .     .     .     .     .     .     .     [otherAgent]>     [agentB1, agentA2]
+   .     .     .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     .     .     [in-context-of]>  [#1023892928, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     [in-context-of]>  [#1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     .     .     [agentA2]>
+   .     .     .     .     .     .     .     .     [name]>           [agentA2]
+   .     .     .     .     .     .     .     .     [#local-id]-      [#999966131]
+   .     .     .     .     .     .     .     .     [#category-type]- [agent]
+   .     .     .     .     .     .     .     .     [shard]-
+   .     .     .     .     .     .     .     .     .     [messaging]>
+   .     .     .     .     .     .     .     .     .     .     [name]>           [messaging]
+   .     .     .     .     .     .     .     .     .     .     [#local-id]-      [#1989780873]
+   .     .     .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     .     .     [in-context-of]>  [#999966131, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     .     .     .     .     [EchoTesting]>
+   .     .     .     .     .     .     .     .     .     .     [name]>           [EchoTesting]
+   .     .     .     .     .     .     .     .     .     .     [#local-id]-      [#1480010240]
+   .     .     .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     .     .     [in-context-of]>  [#999966131, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     .     .     .     .     [PingBackTest]>
+   .     .     .     .     .     .     .     .     .     .     [name]>           [PingBackTest]
+   .     .     .     .     .     .     .     .     .     .     [#local-id]-      [#81628611]
+   .     .     .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     .     .     [in-context-of]>  [#999966131, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     [in-context-of]>  [#1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#1831932724, #1705736037]
+   .     .     .     .     .     [local:default]>
+   .     .     .     .     .     .     [name]>           [local:default]
+   .     .     .     .     .     .     [#local-id]-      [#2129789493]
+   .     .     .     .     .     .     [#category-type]- [pylon]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#1831932724, #1705736037]
+   .     .     .     .     [load_order]-     [pylon;agent]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [loader]-
+   .     .     .     .     .     [agent:composite]>
+   .     .     .     .     .     .     [name]>           [agent:composite]
+   .     .     .     .     .     .     [#local-id]-      [#668386784]
+   .     .     .     .     .     .     [#category-type]- [loader]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#1831932724, #1705736037]
+   .     .     .     .     .     [agent:mobileComposite]>
+   .     .     .     .     .     .     [name]>           [agent:mobileComposite]
+   .     .     .     .     .     .     [#local-id]-      [#1329552164]
+   .     .     .     .     .     .     [#category-type]- [loader]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#1831932724, #1705736037]
+   .     .     .     .     [in-context-of]>  [#1705736037]
+   .     .     .     [nodeB]>
+   .     .     .     .     [name]>           [nodeB]
+   .     .     .     .     [#local-id]-      [#1828972342]
+   .     .     .     .     [#category-type]- [node]
+   .     .     .     .     [pylon]-
+   .     .     .     .     .     [webSocket:pylonB]>
+   .     .     .     .     .     .     [name]>           [webSocket:pylonB]
+   .     .     .     .     .     .     [#local-id]-      [#1452126962]
+   .     .     .     .     .     .     [#category-type]- [pylon]
+   .     .     .     .     .     .     [connectTo]>      [ws://localhost:8988]
+   .     .     .     .     .     .     [agent]-
+   .     .     .     .     .     .     .     [agentB1]>
+   .     .     .     .     .     .     .     .     [name]>           [agentB1]
+   .     .     .     .     .     .     .     .     [#local-id]-      [#931919113]
+   .     .     .     .     .     .     .     .     [#category-type]- [agent]
+   .     .     .     .     .     .     .     .     [shard]-
+   .     .     .     .     .     .     .     .     .     [messaging]>
+   .     .     .     .     .     .     .     .     .     .     [name]>           [messaging]
+   .     .     .     .     .     .     .     .     .     .     [#local-id]-      [#1607521710]
+   .     .     .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     .     .     [in-context-of]>  [#931919113, #1452126962, #1828972342, #1705736037]
+   .     .     .     .     .     .     .     .     .     [EchoTesting]>
+   .     .     .     .     .     .     .     .     .     .     [name]>           [EchoTesting]
+   .     .     .     .     .     .     .     .     .     .     [#local-id]-      [#764977973]
+   .     .     .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     .     .     [in-context-of]>  [#931919113, #1452126962, #1828972342, #1705736037]
+   .     .     .     .     .     .     .     .     .     [PingBackTest]>
+   .     .     .     .     .     .     .     .     .     .     [name]>           [PingBackTest]
+   .     .     .     .     .     .     .     .     .     .     [#local-id]-      [#381259350]
+   .     .     .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     .     .     [in-context-of]>  [#931919113, #1452126962, #1828972342, #1705736037]
+   .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     [in-context-of]>  [#1452126962, #1828972342, #1705736037]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#1828972342, #1705736037]
+   .     .     .     .     .     [local:default]>
+   .     .     .     .     .     .     [name]>           [local:default]
+   .     .     .     .     .     .     [#local-id]-      [#363771819]
+   .     .     .     .     .     .     [#category-type]- [pylon]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#1828972342, #1705736037]
+   .     .     .     .     [load_order]-     [pylon;agent]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [loader]-
+   .     .     .     .     .     [agent:composite]>
+   .     .     .     .     .     .     [name]>           [agent:composite]
+   .     .     .     .     .     .     [#local-id]-      [#2065951873]
+   .     .     .     .     .     .     [#category-type]- [loader]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#1828972342, #1705736037]
+   .     .     .     .     .     [agent:mobileComposite]>
+   .     .     .     .     .     .     [name]>           [agent:mobileComposite]
+   .     .     .     .     .     .     [#local-id]-      [#1791741888]
+   .     .     .     .     .     .     [#category-type]- [loader]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#1828972342, #1705736037]
+   .     .     .     .     [in-context-of]>  [#1705736037]
+   .     .     [pylon]-
+   .     .     .     [local:default]>
+   .     .     .     .     [name]>           [local:default]
+   .     .     .     .     [#local-id]-      [#250421012]
+   .     .     .     .     [#category-type]- [pylon]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#1705736037]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [loader]-
+   .     .     .     [agent:composite]>
+   .     .     .     .     [name]>           [agent:composite]
+   .     .     .     .     [#local-id]-      [#1096979270]
+   .     .     .     .     [#category-type]- [loader]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#1705736037]
+   .     .     .     [agent:mobileComposite]>
+   .     .     .     .     [name]>           [agent:mobileComposite]
+   .     .     .     .     [#local-id]-      [#1078694789]
+   .     .     .     .     [#category-type]- [loader]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#1705736037]
+   .     [#455659002]-
+   .     .     [#local-id]-      [#455659002]
+   .     .     [#category-type]- [node]
+   .     [#250421012]-
+   .     .     [name]>           [local:default]
+   .     .     [#local-id]-      [#250421012]
+   .     .     [#category-type]- [pylon]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [in-context-of]>  [#1705736037]
+   .     [#1096979270]-
+   .     .     [name]>           [agent:composite]
+   .     .     [#local-id]-      [#1096979270]
+   .     .     [#category-type]- [loader]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [in-context-of]>  [#1705736037]
+   .     [#1078694789]-
+   .     .     [name]>           [agent:mobileComposite]
+   .     .     [#local-id]-      [#1078694789]
+   .     .     [#category-type]- [loader]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [in-context-of]>  [#1705736037]
+   .     [#1831932724]-
+   .     .     [name]>           [nodeA]
+   .     .     [#local-id]-      [#1831932724]
+   .     .     [#category-type]- [node]
+   .     .     [pylon]-
+   .     .     .     [webSocket:pylonA]>
+   .     .     .     .     [name]>           [webSocket:pylonA]
+   .     .     .     .     [#local-id]-      [#1747585824]
+   .     .     .     .     [#category-type]- [pylon]
+   .     .     .     .     [serverPort]>     [8988]
+   .     .     .     .     [agent]-
+   .     .     .     .     .     [mobileComposite:agentA1]>
+   .     .     .     .     .     .     [name]>           [mobileComposite:agentA1]
+   .     .     .     .     .     .     [#local-id]-      [#1023892928]
+   .     .     .     .     .     .     [#category-type]- [agent]
+   .     .     .     .     .     .     [shard]-
+   .     .     .     .     .     .     .     [messaging]>
+   .     .     .     .     .     .     .     .     [name]>           [messaging]
+   .     .     .     .     .     .     .     .     [#local-id]-      [#558638686]
+   .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     [in-context-of]>  [#1023892928, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     .     .     [EchoTesting]>
+   .     .     .     .     .     .     .     .     [name]>           [EchoTesting]
+   .     .     .     .     .     .     .     .     [#local-id]-      [#1149319664]
+   .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     [in-context-of]>  [#1023892928, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     .     .     [MobilityTest]>
+   .     .     .     .     .     .     .     .     [name]>           [MobilityTest]
+   .     .     .     .     .     .     .     .     [#local-id]-      [#2093631819]
+   .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     [to]>             [nodeB]
+   .     .     .     .     .     .     .     .     [time]>           [5000]
+   .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     [in-context-of]>  [#1023892928, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     .     .     [PingTest]>
+   .     .     .     .     .     .     .     .     [name]>           [PingTest]
+   .     .     .     .     .     .     .     .     [#local-id]-      [#2074407503]
+   .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     [every]>          [500]
+   .     .     .     .     .     .     .     .     [n]>              [10]
+   .     .     .     .     .     .     .     .     [otherAgent]>     [agentB1, agentA2]
+   .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     [in-context-of]>  [#1023892928, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     [agentA2]>
+   .     .     .     .     .     .     [name]>           [agentA2]
+   .     .     .     .     .     .     [#local-id]-      [#999966131]
+   .     .     .     .     .     .     [#category-type]- [agent]
+   .     .     .     .     .     .     [shard]-
+   .     .     .     .     .     .     .     [messaging]>
+   .     .     .     .     .     .     .     .     [name]>           [messaging]
+   .     .     .     .     .     .     .     .     [#local-id]-      [#1989780873]
+   .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     [in-context-of]>  [#999966131, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     .     .     [EchoTesting]>
+   .     .     .     .     .     .     .     .     [name]>           [EchoTesting]
+   .     .     .     .     .     .     .     .     [#local-id]-      [#1480010240]
+   .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     [in-context-of]>  [#999966131, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     .     .     [PingBackTest]>
+   .     .     .     .     .     .     .     .     [name]>           [PingBackTest]
+   .     .     .     .     .     .     .     .     [#local-id]-      [#81628611]
+   .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     [in-context-of]>  [#999966131, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#1747585824, #1831932724, #1705736037]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#1831932724, #1705736037]
+   .     .     .     [local:default]>
+   .     .     .     .     [name]>           [local:default]
+   .     .     .     .     [#local-id]-      [#2129789493]
+   .     .     .     .     [#category-type]- [pylon]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#1831932724, #1705736037]
+   .     .     [load_order]-     [pylon;agent]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [loader]-
+   .     .     .     [agent:composite]>
+   .     .     .     .     [name]>           [agent:composite]
+   .     .     .     .     [#local-id]-      [#668386784]
+   .     .     .     .     [#category-type]- [loader]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#1831932724, #1705736037]
+   .     .     .     [agent:mobileComposite]>
+   .     .     .     .     [name]>           [agent:mobileComposite]
+   .     .     .     .     [#local-id]-      [#1329552164]
+   .     .     .     .     [#category-type]- [loader]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#1831932724, #1705736037]
+   .     .     [in-context-of]>  [#1705736037]
+   .     [#1747585824]-
+   .     .     [name]>           [webSocket:pylonA]
+   .     .     [#local-id]-      [#1747585824]
+   .     .     [#category-type]- [pylon]
+   .     .     [serverPort]>     [8988]
+   .     .     [agent]-
+   .     .     .     [mobileComposite:agentA1]>
+   .     .     .     .     [name]>           [mobileComposite:agentA1]
+   .     .     .     .     [#local-id]-      [#1023892928]
+   .     .     .     .     [#category-type]- [agent]
+   .     .     .     .     [shard]-
+   .     .     .     .     .     [messaging]>
+   .     .     .     .     .     .     [name]>           [messaging]
+   .     .     .     .     .     .     [#local-id]-      [#558638686]
+   .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#1023892928, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     [EchoTesting]>
+   .     .     .     .     .     .     [name]>           [EchoTesting]
+   .     .     .     .     .     .     [#local-id]-      [#1149319664]
+   .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#1023892928, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     [MobilityTest]>
+   .     .     .     .     .     .     [name]>           [MobilityTest]
+   .     .     .     .     .     .     [#local-id]-      [#2093631819]
+   .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     [to]>             [nodeB]
+   .     .     .     .     .     .     [time]>           [5000]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#1023892928, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     [PingTest]>
+   .     .     .     .     .     .     [name]>           [PingTest]
+   .     .     .     .     .     .     [#local-id]-      [#2074407503]
+   .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     [every]>          [500]
+   .     .     .     .     .     .     [n]>              [10]
+   .     .     .     .     .     .     [otherAgent]>     [agentB1, agentA2]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#1023892928, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#1747585824, #1831932724, #1705736037]
+   .     .     .     [agentA2]>
+   .     .     .     .     [name]>           [agentA2]
+   .     .     .     .     [#local-id]-      [#999966131]
+   .     .     .     .     [#category-type]- [agent]
+   .     .     .     .     [shard]-
+   .     .     .     .     .     [messaging]>
+   .     .     .     .     .     .     [name]>           [messaging]
+   .     .     .     .     .     .     [#local-id]-      [#1989780873]
+   .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#999966131, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     [EchoTesting]>
+   .     .     .     .     .     .     [name]>           [EchoTesting]
+   .     .     .     .     .     .     [#local-id]-      [#1480010240]
+   .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#999966131, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     .     [PingBackTest]>
+   .     .     .     .     .     .     [name]>           [PingBackTest]
+   .     .     .     .     .     .     [#local-id]-      [#81628611]
+   .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#999966131, #1747585824, #1831932724, #1705736037]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#1747585824, #1831932724, #1705736037]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [in-context-of]>  [#1831932724, #1705736037]
+   .     [#1023892928]-
+   .     .     [name]>           [mobileComposite:agentA1]
+   .     .     [#local-id]-      [#1023892928]
+   .     .     [#category-type]- [agent]
+   .     .     [shard]-
+   .     .     .     [messaging]>
+   .     .     .     .     [name]>           [messaging]
+   .     .     .     .     [#local-id]-      [#558638686]
+   .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#1023892928, #1747585824, #1831932724, #1705736037]
+   .     .     .     [EchoTesting]>
+   .     .     .     .     [name]>           [EchoTesting]
+   .     .     .     .     [#local-id]-      [#1149319664]
+   .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#1023892928, #1747585824, #1831932724, #1705736037]
+   .     .     .     [MobilityTest]>
+   .     .     .     .     [name]>           [MobilityTest]
+   .     .     .     .     [#local-id]-      [#2093631819]
+   .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     [to]>             [nodeB]
+   .     .     .     .     [time]>           [5000]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#1023892928, #1747585824, #1831932724, #1705736037]
+   .     .     .     [PingTest]>
+   .     .     .     .     [name]>           [PingTest]
+   .     .     .     .     [#local-id]-      [#2074407503]
+   .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     [every]>          [500]
+   .     .     .     .     [n]>              [10]
+   .     .     .     .     [otherAgent]>     [agentB1, agentA2]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#1023892928, #1747585824, #1831932724, #1705736037]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [in-context-of]>  [#1747585824, #1831932724, #1705736037]
+   .     [#558638686]-
+   .     .     [name]>           [messaging]
+   .     .     [#local-id]-      [#558638686]
+   .     .     [#category-type]- [shard]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [in-context-of]>  [#1023892928, #1747585824, #1831932724, #1705736037]
+   .     [#1149319664]-
+   .     .     [name]>           [EchoTesting]
+   .     .     [#local-id]-      [#1149319664]
+   .     .     [#category-type]- [shard]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [in-context-of]>  [#1023892928, #1747585824, #1831932724, #1705736037]
+   .     [#2093631819]-
+   .     .     [name]>           [MobilityTest]
+   .     .     [#local-id]-      [#2093631819]
+   .     .     [#category-type]- [shard]
+   .     .     [to]>             [nodeB]
+   .     .     [time]>           [5000]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [in-context-of]>  [#1023892928, #1747585824, #1831932724, #1705736037]
+   .     [#2074407503]-
+   .     .     [name]>           [PingTest]
+   .     .     [#local-id]-      [#2074407503]
+   .     .     [#category-type]- [shard]
+   .     .     [every]>          [500]
+   .     .     [n]>              [10]
+   .     .     [otherAgent]>     [agentB1, agentA2]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [in-context-of]>  [#1023892928, #1747585824, #1831932724, #1705736037]
+   .     [#999966131]-
+   .     .     [name]>           [agentA2]
+   .     .     [#local-id]-      [#999966131]
+   .     .     [#category-type]- [agent]
+   .     .     [shard]-
+   .     .     .     [messaging]>
+   .     .     .     .     [name]>           [messaging]
+   .     .     .     .     [#local-id]-      [#1989780873]
+   .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#999966131, #1747585824, #1831932724, #1705736037]
+   .     .     .     [EchoTesting]>
+   .     .     .     .     [name]>           [EchoTesting]
+   .     .     .     .     [#local-id]-      [#1480010240]
+   .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#999966131, #1747585824, #1831932724, #1705736037]
+   .     .     .     [PingBackTest]>
+   .     .     .     .     [name]>           [PingBackTest]
+   .     .     .     .     [#local-id]-      [#81628611]
+   .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#999966131, #1747585824, #1831932724, #1705736037]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [in-context-of]>  [#1747585824, #1831932724, #1705736037]
+   .     [#1989780873]-
+   .     .     [name]>           [messaging]
+   .     .     [#local-id]-      [#1989780873]
+   .     .     [#category-type]- [shard]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [in-context-of]>  [#999966131, #1747585824, #1831932724, #1705736037]
+   .     [#1480010240]-
+   .     .     [name]>           [EchoTesting]
+   .     .     [#local-id]-      [#1480010240]
+   .     .     [#category-type]- [shard]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [in-context-of]>  [#999966131, #1747585824, #1831932724, #1705736037]
+   .     [#81628611]-
+   .     .     [name]>           [PingBackTest]
+   .     .     [#local-id]-      [#81628611]
+   .     .     [#category-type]- [shard]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [in-context-of]>  [#999966131, #1747585824, #1831932724, #1705736037]
+   .     [#1828972342]-
+   .     .     [name]>           [nodeB]
+   .     .     [#local-id]-      [#1828972342]
+   .     .     [#category-type]- [node]
+   .     .     [pylon]-
+   .     .     .     [webSocket:pylonB]>
+   .     .     .     .     [name]>           [webSocket:pylonB]
+   .     .     .     .     [#local-id]-      [#1452126962]
+   .     .     .     .     [#category-type]- [pylon]
+   .     .     .     .     [connectTo]>      [ws://localhost:8988]
+   .     .     .     .     [agent]-
+   .     .     .     .     .     [agentB1]>
+   .     .     .     .     .     .     [name]>           [agentB1]
+   .     .     .     .     .     .     [#local-id]-      [#931919113]
+   .     .     .     .     .     .     [#category-type]- [agent]
+   .     .     .     .     .     .     [shard]-
+   .     .     .     .     .     .     .     [messaging]>
+   .     .     .     .     .     .     .     .     [name]>           [messaging]
+   .     .     .     .     .     .     .     .     [#local-id]-      [#1607521710]
+   .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     [in-context-of]>  [#931919113, #1452126962, #1828972342, #1705736037]
+   .     .     .     .     .     .     .     [EchoTesting]>
+   .     .     .     .     .     .     .     .     [name]>           [EchoTesting]
+   .     .     .     .     .     .     .     .     [#local-id]-      [#764977973]
+   .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     [in-context-of]>  [#931919113, #1452126962, #1828972342, #1705736037]
+   .     .     .     .     .     .     .     [PingBackTest]>
+   .     .     .     .     .     .     .     .     [name]>           [PingBackTest]
+   .     .     .     .     .     .     .     .     [#local-id]-      [#381259350]
+   .     .     .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     .     .     [in-context-of]>  [#931919113, #1452126962, #1828972342, #1705736037]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#1452126962, #1828972342, #1705736037]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#1828972342, #1705736037]
+   .     .     .     [local:default]>
+   .     .     .     .     [name]>           [local:default]
+   .     .     .     .     [#local-id]-      [#363771819]
+   .     .     .     .     [#category-type]- [pylon]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#1828972342, #1705736037]
+   .     .     [load_order]-     [pylon;agent]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [loader]-
+   .     .     .     [agent:composite]>
+   .     .     .     .     [name]>           [agent:composite]
+   .     .     .     .     [#local-id]-      [#2065951873]
+   .     .     .     .     [#category-type]- [loader]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#1828972342, #1705736037]
+   .     .     .     [agent:mobileComposite]>
+   .     .     .     .     [name]>           [agent:mobileComposite]
+   .     .     .     .     [#local-id]-      [#1791741888]
+   .     .     .     .     [#category-type]- [loader]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#1828972342, #1705736037]
+   .     .     [in-context-of]>  [#1705736037]
+   .     [#1452126962]-
+   .     .     [name]>           [webSocket:pylonB]
+   .     .     [#local-id]-      [#1452126962]
+   .     .     [#category-type]- [pylon]
+   .     .     [connectTo]>      [ws://localhost:8988]
+   .     .     [agent]-
+   .     .     .     [agentB1]>
+   .     .     .     .     [name]>           [agentB1]
+   .     .     .     .     [#local-id]-      [#931919113]
+   .     .     .     .     [#category-type]- [agent]
+   .     .     .     .     [shard]-
+   .     .     .     .     .     [messaging]>
+   .     .     .     .     .     .     [name]>           [messaging]
+   .     .     .     .     .     .     [#local-id]-      [#1607521710]
+   .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#931919113, #1452126962, #1828972342, #1705736037]
+   .     .     .     .     .     [EchoTesting]>
+   .     .     .     .     .     .     [name]>           [EchoTesting]
+   .     .     .     .     .     .     [#local-id]-      [#764977973]
+   .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#931919113, #1452126962, #1828972342, #1705736037]
+   .     .     .     .     .     [PingBackTest]>
+   .     .     .     .     .     .     [name]>           [PingBackTest]
+   .     .     .     .     .     .     [#local-id]-      [#381259350]
+   .     .     .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     .     .     [in-context-of]>  [#931919113, #1452126962, #1828972342, #1705736037]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#1452126962, #1828972342, #1705736037]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [in-context-of]>  [#1828972342, #1705736037]
+   .     [#931919113]-
+   .     .     [name]>           [agentB1]
+   .     .     [#local-id]-      [#931919113]
+   .     .     [#category-type]- [agent]
+   .     .     [shard]-
+   .     .     .     [messaging]>
+   .     .     .     .     [name]>           [messaging]
+   .     .     .     .     [#local-id]-      [#1607521710]
+   .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#931919113, #1452126962, #1828972342, #1705736037]
+   .     .     .     [EchoTesting]>
+   .     .     .     .     [name]>           [EchoTesting]
+   .     .     .     .     [#local-id]-      [#764977973]
+   .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#931919113, #1452126962, #1828972342, #1705736037]
+   .     .     .     [PingBackTest]>
+   .     .     .     .     [name]>           [PingBackTest]
+   .     .     .     .     [#local-id]-      [#381259350]
+   .     .     .     .     [#category-type]- [shard]
+   .     .     .     .     [package]>        [testing, test.compositeMobility]
+   .     .     .     .     [in-context-of]>  [#931919113, #1452126962, #1828972342, #1705736037]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [in-context-of]>  [#1452126962, #1828972342, #1705736037]
+   .     [#1607521710]-
+   .     .     [name]>           [messaging]
+   .     .     [#local-id]-      [#1607521710]
+   .     .     [#category-type]- [shard]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [in-context-of]>  [#931919113, #1452126962, #1828972342, #1705736037]
+   .     [#764977973]-
+   .     .     [name]>           [EchoTesting]
+   .     .     [#local-id]-      [#764977973]
+   .     .     [#category-type]- [shard]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [in-context-of]>  [#931919113, #1452126962, #1828972342, #1705736037]
+   .     [#381259350]-
+   .     .     [name]>           [PingBackTest]
+   .     .     [#local-id]-      [#381259350]
+   .     .     [#category-type]- [shard]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [in-context-of]>  [#931919113, #1452126962, #1828972342, #1705736037]
+   .     [#2129789493]-
+   .     .     [name]>           [local:default]
+   .     .     [#local-id]-      [#2129789493]
+   .     .     [#category-type]- [pylon]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [in-context-of]>  [#1831932724, #1705736037]
+   .     [#668386784]-
+   .     .     [name]>           [agent:composite]
+   .     .     [#local-id]-      [#668386784]
+   .     .     [#category-type]- [loader]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [in-context-of]>  [#1831932724, #1705736037]
+   .     [#1329552164]-
+   .     .     [name]>           [agent:mobileComposite]
+   .     .     [#local-id]-      [#1329552164]
+   .     .     [#category-type]- [loader]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [in-context-of]>  [#1831932724, #1705736037]
+   .     [#363771819]-
+   .     .     [name]>           [local:default]
+   .     .     [#local-id]-      [#363771819]
+   .     .     [#category-type]- [pylon]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [in-context-of]>  [#1828972342, #1705736037]
+   .     [#2065951873]-
+   .     .     [name]>           [agent:composite]
+   .     .     [#local-id]-      [#2065951873]
+   .     .     [#category-type]- [loader]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [in-context-of]>  [#1828972342, #1705736037]
+   .     [#1791741888]-
+   .     .     [name]>           [agent:mobileComposite]
+   .     .     [#local-id]-      [#1791741888]
+   .     .     [#category-type]- [loader]
+   .     .     [package]>        [testing, test.compositeMobility]
+   .     .     [in-context-of]>  [#1828972342, #1705736037]
+]
+> [ settings load ] log exit.
+. [ boot          ] Configuration loaded
+. [ boot          ] Loading node [node:null.0]
+> [ boot          ] No loaders configured.
+. [ boot          ] Trying to load node using default loader [net.xqhs.flash.core.SimpleLoader], from classpath [node][net.xqhs.flash.core.node.Node]
+> [ node:null.0   ] Active entitites:[[agent]]
+> [ boot          ] Nothing to load
+. [ boot          ] node loaded: [null]
+. [ boot          ] Loading node [node:nodeA.0]
+> [ boot          ] Loader for [agent] of kind [composite] successfully loaded from [net.xqhs.flash.core.composite.CompositeAgentLoader].
+> [ boot          ] Loader for [agent] of kind [mobileComposite] successfully loaded from [net.xqhs.flash.core.mobileComposite.MobileCompositeAgentLoader].
+. [ boot          ] Trying to load node using default loader [net.xqhs.flash.core.SimpleLoader], from classpath [node][net.xqhs.flash.core.node.Node]
+> [ node:nodeA.0  ] Active entitites:[[agent]]
+. [ boot          ] Loading order: [pylon;agent]
+. [ boot          ] Loading category: [pylon]
+. [ boot          ] Trying to load [webSocket:pylonA]/[#1747585824] [pylon][webSocket] using default loader [net.xqhs.flash.core.SimpleLoader], from classpath [net.xqhs.flash.webSocket.WebSocketPylon]
+. [ pylonA        ] Added node context:[nodeA]
+> [ boot          ] Entity [webSocket:pylonA]/[#1747585824] of type [pylon] successfully loaded.
+. [ node:nodeA.0  ] registered an entity of type [pylon]. Provided name was [pylonA].
+. [ boot          ] Loaded items:[[#1831932724, #1747585824]]
+. [ boot          ] Trying to load [local:default]/[#2129789493] [pylon][local] using default loader [net.xqhs.flash.core.SimpleLoader], from classpath [net.xqhs.flash.local.LocalPylon]
+. [ default       ] Added node context:[nodeA]
+> [ boot          ] Entity [local:default]/[#2129789493] of type [pylon] successfully loaded.
+. [ node:nodeA.0  ] registered an entity of type [pylon]. Provided name was [default].
+. [ boot          ] Loaded items:[[#1831932724, #1747585824, #2129789493]]
+. [ boot          ] Loading category: [agent]
+. [ boot          ] Trying to load [mobileComposite:agentA1]/[#1023892928] [agent][mobileComposite] using [0]th loader for [mobileComposite][null]
+. [ boot          ] Pylon [pylonA pylon] recommends [messaging] shard at classpath [net.xqhs.flash.webSocket.WebSocketMessagingShard].
+. [ boot          ] agentA1: shard [messaging] can be loaded
+. [ boot          ] Pylon [pylonA pylon] does not recommend a [EchoTesting]/[EchoTesting] shard.
+. [ boot          ] agentA1: shard [EchoTesting] can be loaded
+. [ boot          ] Pylon [pylonA pylon] does not recommend a [MobilityTest]/[MobilityTest] shard.
+. [ boot          ] agentA1: shard [MobilityTest] can be loaded
+. [ boot          ] Pylon [pylonA pylon] does not recommend a [PingTest]/[PingTest] shard.
+. [ boot          ] agentA1: shard [PingTest] can be loaded
+. [ boot          ] agentA1: Shard [messaging] created for agent [agentA1] from classpath [net.xqhs.flash.webSocket.WebSocketMessagingShard]. now configuring.
+. [ boot          ] agentA1: Shard [messaging] for agent [agentA1] configured.
+. [ boot          ] agentA1: Shard [EchoTesting] created for agent [agentA1] from classpath [testing.EchoTestingShard]. now configuring.
+. [ boot          ] agentA1: Shard [EchoTesting] for agent [agentA1] configured.
+. [ testing-agentA1 >>>> ] testing started.
+. [ boot                 ] agentA1: Shard [MobilityTest] created for agent [agentA1] from classpath [test.compositeMobility.MobilityTestShard]. now configuring.
+. [ boot                 ] agentA1: Shard [MobilityTest] for agent [agentA1] configured.
+. [ boot                 ] agentA1: Shard [PingTest] created for agent [agentA1] from classpath [testing.PingTestShard]. now configuring.
+. [ boot                 ] agentA1: Shard [PingTest] for agent [agentA1] configured.
+> [ boot                 ] Entity [mobileComposite:agentA1]/[#1023892928] of type [agent] successfully loaded.
+. [ node:nodeA.0         ] registered an entity of type [agent]. Provided name was [agentA1].
+. [ boot                 ] Loaded items:[[#1831932724, #1747585824, #2129789493, #1023892928]]
+. [ boot                 ] Trying to load [agentA2]/[#999966131] [agent][null] using [0]th loader for [agent][first (composite)]
+. [ boot                 ] Pylon [pylonA pylon] recommends [messaging] shard at classpath [net.xqhs.flash.webSocket.WebSocketMessagingShard].
+. [ boot                 ] agentA2: shard [messaging] can be loaded
+. [ boot                 ] Pylon [pylonA pylon] does not recommend a [EchoTesting]/[EchoTesting] shard.
+. [ boot                 ] agentA2: shard [EchoTesting] can be loaded
+. [ boot                 ] Pylon [pylonA pylon] does not recommend a [PingBackTest]/[PingBackTest] shard.
+. [ boot                 ] agentA2: shard [PingBackTest] can be loaded
+. [ boot                 ] agentA2: Shard [messaging] created for agent [agentA2] from classpath [net.xqhs.flash.webSocket.WebSocketMessagingShard]. now configuring.
+. [ boot                 ] agentA2: Shard [messaging] for agent [agentA2] configured.
+. [ boot                 ] agentA2: Shard [EchoTesting] created for agent [agentA2] from classpath [testing.EchoTestingShard]. now configuring.
+. [ boot                 ] agentA2: Shard [EchoTesting] for agent [agentA2] configured.
+. [ testing-agentA2 >>>> ] testing started.
+. [ boot                 ] agentA2: Shard [PingBackTest] created for agent [agentA2] from classpath [testing.PingBackTestShard]. now configuring.
+. [ boot                 ] agentA2: Shard [PingBackTest] for agent [agentA2] configured.
+> [ boot                 ] Entity [agentA2]/[#999966131] of type [agent] successfully loaded.
+. [ node:nodeA.0         ] registered an entity of type [agent]. Provided name was [agentA2].
+. [ boot                 ] Loaded items:[[#1831932724, #1747585824, #2129789493, #1023892928, #999966131]]
+. [ boot                 ] Other configuration:
+. [ node:nodeA.0         ] Messaging shard added, affiliated with pylon [pylonA pylon]
+. [ boot                 ] node loaded: [nodeA]
+. [ boot                 ] Loading node [node:nodeB.0]
+> [ boot                 ] Loader for [agent] of kind [composite] successfully loaded from [net.xqhs.flash.core.composite.CompositeAgentLoader].
+> [ boot                 ] Loader for [agent] of kind [mobileComposite] successfully loaded from [net.xqhs.flash.core.mobileComposite.MobileCompositeAgentLoader].
+. [ boot                 ] Trying to load node using default loader [net.xqhs.flash.core.SimpleLoader], from classpath [node][net.xqhs.flash.core.node.Node]
+> [ node:nodeB.0         ] Active entitites:[[agent]]
+. [ boot                 ] Loading order: [pylon;agent]
+. [ boot                 ] Loading category: [pylon]
+. [ boot                 ] Trying to load [webSocket:pylonB]/[#1452126962] [pylon][webSocket] using default loader [net.xqhs.flash.core.SimpleLoader], from classpath [net.xqhs.flash.webSocket.WebSocketPylon]
+. [ pylonB               ] Added node context:[nodeB]
+> [ boot                 ] Entity [webSocket:pylonB]/[#1452126962] of type [pylon] successfully loaded.
+. [ node:nodeB.0         ] registered an entity of type [pylon]. Provided name was [pylonB].
+. [ boot                 ] Loaded items:[[#1828972342, #1452126962]]
+. [ boot                 ] Trying to load [local:default]/[#363771819] [pylon][local] using default loader [net.xqhs.flash.core.SimpleLoader], from classpath [net.xqhs.flash.local.LocalPylon]
+. [ default              ] Added node context:[nodeB]
+> [ boot                 ] Entity [local:default]/[#363771819] of type [pylon] successfully loaded.
+. [ node:nodeB.0         ] registered an entity of type [pylon]. Provided name was [default].
+. [ boot                 ] Loaded items:[[#1828972342, #1452126962, #363771819]]
+. [ boot                 ] Loading category: [agent]
+. [ boot                 ] Trying to load [agentB1]/[#931919113] [agent][null] using [0]th loader for [agent][first (composite)]
+. [ boot                 ] Pylon [pylonB pylon] recommends [messaging] shard at classpath [net.xqhs.flash.webSocket.WebSocketMessagingShard].
+. [ boot                 ] agentB1: shard [messaging] can be loaded
+. [ boot                 ] Pylon [pylonB pylon] does not recommend a [EchoTesting]/[EchoTesting] shard.
+. [ boot                 ] agentB1: shard [EchoTesting] can be loaded
+. [ boot                 ] Pylon [pylonB pylon] does not recommend a [PingBackTest]/[PingBackTest] shard.
+. [ boot                 ] agentB1: shard [PingBackTest] can be loaded
+. [ boot                 ] agentB1: Shard [messaging] created for agent [agentB1] from classpath [net.xqhs.flash.webSocket.WebSocketMessagingShard]. now configuring.
+. [ boot                 ] agentB1: Shard [messaging] for agent [agentB1] configured.
+. [ boot                 ] agentB1: Shard [EchoTesting] created for agent [agentB1] from classpath [testing.EchoTestingShard]. now configuring.
+. [ boot                 ] agentB1: Shard [EchoTesting] for agent [agentB1] configured.
+. [ testing-agentB1 >>>> ] testing started.
+. [ boot                 ] agentB1: Shard [PingBackTest] created for agent [agentB1] from classpath [testing.PingBackTestShard]. now configuring.
+. [ boot                 ] agentB1: Shard [PingBackTest] for agent [agentB1] configured.
+> [ boot                 ] Entity [agentB1]/[#931919113] of type [agent] successfully loaded.
+. [ node:nodeB.0         ] registered an entity of type [agent]. Provided name was [agentB1].
+. [ boot                 ] Loaded items:[[#1828972342, #1452126962, #363771819, #931919113]]
+. [ boot                 ] Other configuration:
+. [ node:nodeB.0         ] Messaging shard added, affiliated with pylon [pylonB pylon]
+. [ boot                 ] node loaded: [nodeB]
+. [ boot                 ] [3] nodes loaded.
+> [ boot                 ] log exit.
+> [ node:null.0          ] Starting node [null] with entities [[]].
+> [ node:null.0          ] Node [null] started.
+> [ node:nodeA.0         ] Starting node [nodeA] with entities [[net.xqhs.flash.webSocket.WebSocketPylon@3941a79c, net.xqhs.flash.local.LocalPylon@9807454, agentA1, agentA2]].
+. [ node:nodeA.0         ] starting entity [pylonA pylon]...
+. [ websocket-server     ] Starting websocket server on port: [8988]
+. [ pylonA               ] Trying connection to WS server [ws://localhost:8988] tries left: [10]
+> [ websocket-server     ] Server started successfully.
+> [ websocket-server     ] new client connected [org.java_websocket.WebSocketImpl@511e02f1]
+. [ pylonA               ] connected to [ws://localhost:8988]
+. [ pylonA               ] [pylonA] starting
+> [ pylonA               ] Started [with thread].
+. [ node:nodeA.0         ] entity [pylonA pylon] started successfully.
+. [ pylonA               ] Registered entity [nodeA]/[net.xqhs.flash.core.support.AbstractMessagingShard$1@2c13da15] with this pylon [net.xqhs.flash.webSocket.WebSocketPylon@3941a79c]: [{"nodeName":"nodeA","entityName":"nodeA"}]
+. [ node:nodeA.0         ] starting entity [default pylon]...
+. [ default              ] [default] starting
+> [ default              ] Started with thread.
+. [ node:nodeA.0         ] entity [default pylon] started successfully.
+. [ node:nodeA.0         ] starting entity [agentA1]...
+> [ agentA1#             ] Agent state is soon [STARTING][]
+. [ node:nodeA.0         ] entity [agentA1] started successfully.
+. [ node:nodeA.0         ] starting entity [agentA2]...
+> [ agentA2#             ] Agent state is soon [STARTING][]
+. [ node:nodeA.0         ] entity [agentA2] started successfully.
+# [ pylonA               ] Entity [nodeA] already registered with this pylon [net.xqhs.flash.webSocket.WebSocketPylon@3941a79c].
+. [ websocket-server     ] Registered node [nodeA].
+. [ websocket-server     ] Registered entity [nodeA] on [nodeA].
+. [ pylonA               ] Registered entity [agentA2]/[net.xqhs.flash.core.support.AbstractMessagingShard$1@7c761747] with this pylon [net.xqhs.flash.webSocket.WebSocketPylon@3941a79c]: [{"nodeName":"nodeA","entityName":"agentA2"}]
+. [ websocket-server     ] entities: [[nodeA]] ; nodes: [[nodeA]] ; node-entities: [{nodeA=[nodeA]}]
+> [ testing-agentA2 >>>> ] agent [agentA2] event: [{EVENT_TYPE=[AGENT_START]}]
+. [ pylonA               ] Registered entity [agentA1]/[net.xqhs.flash.core.support.AbstractMessagingShard$1@42186b25] with this pylon [net.xqhs.flash.webSocket.WebSocketPylon@3941a79c]: [{"nodeName":"nodeA","entityName":"agentA1"}]
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AGENT_START]}]
+. [ websocket-server     ] Registered entity [agentA1] on [nodeA].
+. [ websocket-server     ] entities: [[agentA1, nodeA]] ; nodes: [[nodeA]] ; node-entities: [{nodeA=[nodeA, agentA1]}]
+> [ agentA2#             ] state is now [RUNNING]
+. [ websocket-server     ] Registered entity [agentA2] on [nodeA].
+. [ websocket-server     ] entities: [[agentA2, agentA1, nodeA]] ; nodes: [[nodeA]] ; node-entities: [{nodeA=[nodeA, agentA1, agentA2]}]
+> [ node:nodeA.0         ] Node [nodeA] started.
+> [ agentA1#             ] state is now [RUNNING]
+Sending the message....
+# [ websocket-server     ] Failed to find websocket for the entity [Monitoring&Control_Entity].
+. [ websocket-server     ] entities: [[agentA2, agentA1, nodeA]] ; nodes: [[nodeA]] ; node-entities: [{nodeA=[nodeA, agentA1, agentA2]}]
+# [ websocket-server     ] Failed to find websocket for the entity [agentB1].
+. [ websocket-server     ] entities: [[agentA2, agentA1, nodeA]] ; nodes: [[nodeA]] ; node-entities: [{nodeA=[nodeA, agentA1, agentA2]}]
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeA","destination":"agentA2\/pong","source":"agentA1\/ping","content":"ping-no 1"}].
+. [ node:nodeA.0         ] Entities successfully registered to control entity.
+> [ testing-agentA2 >>>> ] agent [agentA2] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 1], destination-element=[pong], destination-complete=[agentA2/pong], source-element=[agentA1, ping]}]
+> [ node:nodeB.0         ] Starting node [nodeB] with entities [[net.xqhs.flash.webSocket.WebSocketPylon@7ab2bfe1, net.xqhs.flash.local.LocalPylon@b1a58a3, agentB1]].
+. [ node:nodeB.0         ] starting entity [pylonB pylon]...
+. [ pylonB               ] Trying connection to WS server [ws://localhost:8988] tries left: [10]
+# [ websocket-server     ] Failed to find websocket for the entity [Monitoring&Control_Entity].
+. [ websocket-server     ] entities: [[agentA2, agentA1, nodeA]] ; nodes: [[nodeA]] ; node-entities: [{nodeA=[nodeA, agentA1, agentA2]}]
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeA","destination":"agentA1\/ping","source":"agentA2\/pong","content":"ping-no 1 reply"}].
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 1 reply], destination-element=[ping], destination-complete=[agentA1/ping], source-element=[agentA2, pong]}]
+> [ websocket-server     ] new client connected [org.java_websocket.WebSocketImpl@11436080]
+. [ pylonB               ] connected to [ws://localhost:8988]
+. [ pylonB               ] [pylonB] starting
+> [ pylonB               ] Started [with thread].
+. [ node:nodeB.0         ] entity [pylonB pylon] started successfully.
+. [ pylonB               ] Registered entity [nodeB]/[net.xqhs.flash.core.support.AbstractMessagingShard$1@707f7052] with this pylon [net.xqhs.flash.webSocket.WebSocketPylon@7ab2bfe1]: [{"nodeName":"nodeB","entityName":"nodeB"}]
+. [ node:nodeB.0         ] starting entity [default pylon]...
+. [ default              ] [default] starting
+> [ default              ] Started with thread.
+. [ node:nodeB.0         ] entity [default pylon] started successfully.
+. [ websocket-server     ] Registered node [nodeB].
+. [ node:nodeB.0         ] starting entity [agentB1]...
+. [ websocket-server     ] Registered entity [nodeB] on [nodeB].
+> [ agentB1#             ] Agent state is soon [STARTING][]
+. [ websocket-server     ] entities: [[nodeB, agentA2, agentA1, nodeA]] ; nodes: [[nodeA, nodeB]] ; node-entities: [{nodeA=[nodeA, agentA1, agentA2], nodeB=[nodeB]}]
+. [ node:nodeB.0         ] entity [agentB1] started successfully.
+# [ pylonB               ] Entity [nodeB] already registered with this pylon [net.xqhs.flash.webSocket.WebSocketPylon@7ab2bfe1].
+> [ node:nodeB.0         ] Node [nodeB] started.
+. [ pylonB               ] Registered entity [agentB1]/[net.xqhs.flash.core.support.AbstractMessagingShard$1@206a4037] with this pylon [net.xqhs.flash.webSocket.WebSocketPylon@7ab2bfe1]: [{"nodeName":"nodeB","entityName":"agentB1"}]
+> [ testing-agentB1 >>>> ] agent [agentB1] event: [{EVENT_TYPE=[AGENT_START]}]
+> [ agentB1#             ] state is now [RUNNING]
+. [ websocket-server     ] Registered entity [agentB1] on [nodeB].
+. [ websocket-server     ] entities: [[nodeB, agentA2, agentB1, agentA1, nodeA]] ; nodes: [[nodeA, nodeB]] ; node-entities: [{nodeA=[nodeA, agentA1, agentA2], nodeB=[nodeB, agentB1]}]
+# [ websocket-server     ] Failed to find websocket for the entity [Monitoring&Control_Entity].
+. [ websocket-server     ] entities: [[nodeB, agentA2, agentB1, agentA1, nodeA]] ; nodes: [[nodeA, nodeB]] ; node-entities: [{nodeA=[nodeA, agentA1, agentA2], nodeB=[nodeB, agentB1]}]
+. [ node:nodeB.0         ] Entities successfully registered to control entity.
+# [ websocket-server     ] Failed to find websocket for the entity [Monitoring&Control_Entity].
+. [ websocket-server     ] entities: [[nodeB, agentA2, agentB1, agentA1, nodeA]] ; nodes: [[nodeA, nodeB]] ; node-entities: [{nodeA=[nodeA, agentA1, agentA2], nodeB=[nodeB, agentB1]}]
+Sending the message....
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeA","destination":"agentB1\/pong","source":"agentA1\/ping","content":"ping-no 2"}].
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeA","destination":"agentA2\/pong","source":"agentA1\/ping","content":"ping-no 2"}].
+> [ testing-agentB1 >>>> ] agent [agentB1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 2], destination-element=[pong], destination-complete=[agentB1/pong], source-element=[agentA1, ping]}]
+> [ testing-agentA2 >>>> ] agent [agentA2] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 2], destination-element=[pong], destination-complete=[agentA2/pong], source-element=[agentA1, ping]}]
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeB","destination":"agentA1\/ping","source":"agentB1\/pong","content":"ping-no 2 reply"}].
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeA","destination":"agentA1\/ping","source":"agentA2\/pong","content":"ping-no 2 reply"}].
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 2 reply], destination-element=[ping], destination-complete=[agentA1/ping], source-element=[agentB1, pong]}]
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 2 reply], destination-element=[ping], destination-complete=[agentA1/ping], source-element=[agentA2, pong]}]
+Sending the message....
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeA","destination":"agentB1\/pong","source":"agentA1\/ping","content":"ping-no 3"}].
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeA","destination":"agentA2\/pong","source":"agentA1\/ping","content":"ping-no 3"}].
+> [ testing-agentB1 >>>> ] agent [agentB1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 3], destination-element=[pong], destination-complete=[agentB1/pong], source-element=[agentA1, ping]}]
+> [ testing-agentA2 >>>> ] agent [agentA2] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 3], destination-element=[pong], destination-complete=[agentA2/pong], source-element=[agentA1, ping]}]
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeB","destination":"agentA1\/ping","source":"agentB1\/pong","content":"ping-no 3 reply"}].
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 3 reply], destination-element=[ping], destination-complete=[agentA1/ping], source-element=[agentB1, pong]}]
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeA","destination":"agentA1\/ping","source":"agentA2\/pong","content":"ping-no 3 reply"}].
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 3 reply], destination-element=[ping], destination-complete=[agentA1/ping], source-element=[agentA2, pong]}]
+> [ node:null.0          ] Node [null] will stop due to no more active entitites running. Active entity type list was [[agent]].
+> [ node:null.0          ] Stopping node [null] with entities [[]].
+> [ node:null.0          ] Node [null] stopped.
+> [ agentA1#             ] preparing to move to [nodeB]; managed by [agent]
+> [ agentA1#             ] Agent state is soon [STOPPING][transient]
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[BEFORE_MOVE], TARGET=[nodeB]}]
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AGENT_STOP], TO_FROM_TRANSIENT=[MOVE], TARGET=[nodeB]}]
+> [ testing-agentA1 >>>> ] log exit.
+. [ pylonA               ] Unregistered entity [agentA1] from this pylon [net.xqhs.flash.webSocket.WebSocketPylon@3941a79c]: [{"nodeName":"nodeA","entityName":"agentA1","unregister":"unregister"}]
+> [ agentA1#             ] state is now [TRANSIENT]
+> [ agentA1#             ] log exit.
+. [ websocket-server     ] Unregistered entity [agentA1] on [nodeA].
+. [ websocket-server     ] entities: [[nodeB, agentA2, agentB1, nodeA]] ; nodes: [[nodeA, nodeB]] ; node-entities: [{nodeA=[nodeA, agentA2], nodeB=[nodeB, agentB1]}]
+> [ agentA1#             ] Serializing shards [{TESTING=testing.PingTestShard@cc34f4d, MOBILITY=test.compositeMobility.MobilityTestShard@4769b07b, messaging=net.xqhs.flash.webSocket.WebSocketMessagingShard@1b2c6ec2, test/monitoring=testing.EchoTestingShard@70177ecd}] with the order [[messaging, test/monitoring, MOBILITY, TESTING]].
+> [ agentA1#             ] [testing.PingTestShard@cc34f4d] is serializable
+> [ agentA1#             ] [test.compositeMobility.MobilityTestShard@4769b07b] is serializable
+> [ agentA1#             ] [net.xqhs.flash.webSocket.WebSocketMessagingShard@1b2c6ec2] is serializable
+> [ agentA1#             ] [testing.EchoTestingShard@70177ecd] is serializable
+. [ node:nodeA.0         ] Send message with agent [agentA1] to [nodeB]
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeA","destination":"nodeB\/node","source":"nodeA\/node","content":"{\"name\":\"receive_agent\",\"params\":\"rO0ABXNyADhuZXQueHFocy5mbGFzaC5jb3JlLm1vYmlsZUNvbXBvc2l0ZS5Nb2JpbGVDb21wb3NpdGVBZ2VudPu4iz8DiCJKAgACTAAebm9uU2VyaWFsaXplZFNoYXJkRGVzaWduYXRpb25zdAAPTGphdmEvdXRpbC9NYXA7TAAQc2VyaWFsaXplZFNoYXJkc3EAfgABeHIALG5ldC54cWhzLmZsYXNoLmNvcmUuY29tcG9zaXRlLkNvbXBvc2l0ZUFnZW50sTeuitIRT4sCAAhaAA1VU0VfTE9DQUxfTE9HTAAMYWdlbnRDb250ZXh0dAAVTGphdmEvdXRpbC9BcnJheUxpc3Q7TAAJYWdlbnROYW1ldAASTGphdmEvbGFuZy9TdHJpbmc7TAAKYWdlbnRTdGF0ZXQAOUxuZXQveHFocy9mbGFzaC9jb3JlL2NvbXBvc2l0ZS9Db21wb3NpdGVBZ2VudCRBZ2VudFN0YXRlO0wACWFzQ29udGV4dHQAKExuZXQveHFocy9mbGFzaC9jb3JlL0VudGl0eSRFbnRpdHlQcm94eTtMAApldmVudFF1ZXVldAAqTGphdmEvdXRpbC9jb25jdXJyZW50L0xpbmtlZEJsb2NraW5nUXVldWU7TAAKc2hhcmRPcmRlcnEAfgADTAAGc2hhcmRzcQB+AAF4cAFzcgATamF2YS51dGlsLkFycmF5TGlzdHiB0h2Zx2GdAwABSQAEc2l6ZXhwAAAAAHcEAAAAAHh0AAdhZ2VudEExfnIAN25ldC54cWhzLmZsYXNoLmNvcmUuY29tcG9zaXRlLkNvbXBvc2l0ZUFnZW50JEFnZW50U3RhdGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAlUUkFOU0lFTlRzcgBbbmV0LnhxaHMuZmxhc2guY29yZS5tb2JpbGVDb21wb3NpdGUuTW9iaWxlQ29tcG9zaXRlQWdlbnQkTW9iaWxlQ29tcG9zaXRlQWdlbnRTaGFyZENvbnRhaW5lcjp2T2dCY+ldAgABTAAGdGhpcyQwdAA6TG5ldC94cWhzL2ZsYXNoL2NvcmUvbW9iaWxlQ29tcG9zaXRlL01vYmlsZUNvbXBvc2l0ZUFnZW50O3hyAEluZXQueHFocy5mbGFzaC5jb3JlLmNvbXBvc2l0ZS5Db21wb3NpdGVBZ2VudCRDb21wb3NpdGVBZ2VudFNoYXJkQ29udGFpbmVyOnZPZ0Jj6V0CAAJMAAVhZ2VudHQALkxuZXQveHFocy9mbGFzaC9jb3JlL2NvbXBvc2l0ZS9Db21wb3NpdGVBZ2VudDtMAAZ0aGlzJDBxAH4AE3hwcQB+AAhxAH4ACHEAfgAIcHNxAH4ACQAAAAR3BAAAAARzcgAvbmV0LnhxaHMuZmxhc2guY29yZS5zaGFyZC5BZ2VudFNoYXJkRGVzaWduYXRpb24AAAAAAAAAAQIAAkwAC2N1c3RvbVNoYXJkcQB+AARMAA1zdGFuZGFyZFNoYXJkdABETG5ldC94cWhzL2ZsYXNoL2NvcmUvc2hhcmQvQWdlbnRTaGFyZERlc2lnbmF0aW9uJFN0YW5kYXJkQWdlbnRTaGFyZDt4cHB+cgBCbmV0LnhxaHMuZmxhc2guY29yZS5zaGFyZC5BZ2VudFNoYXJkRGVzaWduYXRpb24kU3RhbmRhcmRBZ2VudFNoYXJkAAAAAAAAAAASAAB4cQB+AA10AAlNRVNTQUdJTkdzcQB+ABZ0AA90ZXN0L21vbml0b3Jpbmdwc3EAfgAWdAAITU9CSUxJVFlwc3EAfgAWdAAHVEVTVElOR3B4c3IAEWphdmEudXRpbC5IYXNoTWFwBQfawcMWYNEDAAJGAApsb2FkRmFjdG9ySQAJdGhyZXNob2xkeHA\/QAAAAAAADHcIAAAAEAAAAAB4c3EAfgAiP0AAAAAAAAB3CAAAABAAAAAAeHNxAH4AIj9AAAAAAAAMdwgAAAAQAAAABHEAfgAgdAicck8wQUJYTnlBQlYwWlhOMGFXNW5MbEJwYm1kVVpYTjBVMmhoY21SSVh2dVJCTFZjMmdJQUJsb0FCR3RsWlhCSkFBRnVTUUFHY0dWeWFXOWtTUUFFZEdsamEwd0FDMjkwYUdWeVFXZGxiblJ6ZEFBUVRHcGhkbUV2ZFhScGJDOU1hWE4wTzB3QUNYUm9hWE5CWjJWdWRIUUFFa3hxWVhaaEwyeGhibWN2VTNSeWFXNW5PM2h5QUN0dVpYUXVlSEZvY3k1bWJHRnphQzVqYjNKbExuTm9ZWEprTGtGblpXNTBVMmhoY21SSFpXNWxjbUZzVDdMaFBwb2hucUlDQUFCNGNnQW9ibVYwTG5oeGFITXVabXhoYzJndVkyOXlaUzV6YUdGeVpDNUJaMlZ1ZEZOb1lYSmtRMjl5WlkwUGZlbW0weHp2QWdBRFdnQUphWE5TZFc1dWFXNW5UQUFTYzJoaGNtUkRiMjVtYVdkMWNtRjBhVzl1ZEFBblRHNWxkQzk0Y1doekwyWnNZWE5vTDJOdmNtVXZkWFJwYkM5TmRXeDBhVlJ5WldWTllYQTdUQUFRYzJoaGNtUkVaWE5wWjI1aGRHbHZiblFBTVV4dVpYUXZlSEZvY3k5bWJHRnphQzlqYjNKbEwzTm9ZWEprTDBGblpXNTBVMmhoY21SRVpYTnBaMjVoZEdsdmJqdDRjQUJ6Y2dBbGJtVjBMbmh4YUhNdVpteGhjMmd1WTI5eVpTNTFkR2xzTGsxMWJIUnBWSEpsWlUxaGNEeUlOekZiL3VXOEFnQUVTUUFHY0dGa1RHVnVUQUFLYzJsdGNHeGxTMlY1YzNRQUQweHFZWFpoTDNWMGFXd3ZVMlYwTzB3QURYTnBibWRzWlhSdmJrdGxlWE54QUg0QUNVd0FDSFJ5WldWTFpYbHpjUUIrQUFsNGNnQW1ibVYwTG5oeGFITXVabXhoYzJndVkyOXlaUzUxZEdsc0xrMTFiSFJwVm1Gc2RXVk5ZWENPSXp2N1BNcmJZUUlBQVV3QUNtSmhZMnRwYm1kTllYQjBBQTlNYW1GMllTOTFkR2xzTDAxaGNEdDRjSE55QUJkcVlYWmhMblYwYVd3dVRHbHVhMlZrU0dGemFFMWhjRFRBVGx3UWJNRDdBZ0FCV2dBTFlXTmpaWE56VDNKa1pYSjRjZ0FSYW1GMllTNTFkR2xzTGtoaGMyaE5ZWEFGQjlyQnd4WmcwUU1BQWtZQUNteHZZV1JHWVdOMGIzSkpBQWwwYUhKbGMyaHZiR1I0Y0Q5QUFBQUFBQUFNZHdnQUFBQVFBQUFBQ1hRQUJHNWhiV1Z6Y2dBVGFtRjJZUzUxZEdsc0xrRnljbUY1VEdsemRIaUIwaDJaeDJHZEF3QUJTUUFFYzJsNlpYaHdBQUFBQVhjRUFBQUFBWFFBQ0ZCcGJtZFVaWE4wZUhRQUNTTnNiMk5oYkMxcFpITnhBSDRBRVFBQUFBRjNCQUFBQUFGMEFBc2pNakEzTkRRd056VXdNM2gwQUE0alkyRjBaV2R2Y25rdGRIbHdaWE54QUg0QUVRQUFBQUYzQkFBQUFBRjBBQVZ6YUdGeVpIaDBBQVZsZG1WeWVYTnhBSDRBRVFBQUFBRjNCQUFBQUFGMEFBTTFNREI0ZEFBQmJuTnhBSDRBRVFBQUFBRjNCQUFBQUFGMEFBSXhNSGgwQUFwdmRHaGxja0ZuWlc1MGMzRUFmZ0FSQUFBQUFuY0VBQUFBQW5RQUIyRm5aVzUwUWpGMEFBZGhaMlZ1ZEVFeWVIUUFCM0JoWTJ0aFoyVnpjUUIrQUJFQUFBQUdkd1FBQUFBR2RBQUhkR1Z6ZEdsdVozUUFGblJsYzNRdVkyOXRjRzl6YVhSbFRXOWlhV3hwZEhseEFINEFKbkVBZmdBbmNRQitBQ1p4QUg0QUozaDBBQTFwYmkxamIyNTBaWGgwTFc5bWMzRUFmZ0FSQUFBQUJIY0VBQUFBQkhRQUN5TXhNREl6T0RreU9USTRkQUFMSXpFM05EYzFPRFU0TWpSMEFBc2pNVGd6TVRrek1qY3lOSFFBQ3lNeE56QTFOek0yTURNM2VIUUFDV05zWVhOemNHRjBhSE54QUg0QUVRQUFBQUYzQkFBQUFBRjBBQlYwWlhOMGFXNW5MbEJwYm1kVVpYTjBVMmhoY21SNGVBQUFBQUFPYzNJQUYycGhkbUV1ZFhScGJDNU1hVzVyWldSSVlYTm9VMlYwMkd6WFdwWGRLaDRDQUFCNGNnQVJhbUYyWVM1MWRHbHNMa2hoYzJoVFpYUzZSSVdWbHJpM05BTUFBSGh3ZHd3QUFBQVFQMEFBQUFBQUFBbHhBSDRBRUhFQWZnQVVjUUIrQUJkeEFINEFHbkVBZmdBZGNRQitBQ0J4QUg0QUpIRUFmZ0FvY1FCK0FDNTRjM0VBZmdBeGR3d0FBQUFRUDBBQUFBQUFBQU54QUg0QUZIRUFmZ0FYY1FCK0FDNTRjM0VBZmdBeGR3d0FBQUFRUDBBQUFBQUFBQUI0YzNJQUwyNWxkQzU0Y1doekxtWnNZWE5vTG1OdmNtVXVjMmhoY21RdVFXZGxiblJUYUdGeVpFUmxjMmxuYm1GMGFXOXVBQUFBQUFBQUFBRUNBQUpNQUF0amRYTjBiMjFUYUdGeVpIRUFmZ0FDVEFBTmMzUmhibVJoY21SVGFHRnlaSFFBUkV4dVpYUXZlSEZvY3k5bWJHRnphQzlqYjNKbEwzTm9ZWEprTDBGblpXNTBVMmhoY21SRVpYTnBaMjVoZEdsdmJpUlRkR0Z1WkdGeVpFRm5aVzUwVTJoaGNtUTdlSEIwQUFkVVJWTlVTVTVIY0FBQUFBQUtBQUFCOUFBQUFBTnpjUUIrQUJFQUFBQUNkd1FBQUFBQ2NRQitBQ0p4QUg0QUkzaDBBQWRoWjJWdWRFRXhxAH4AHnQIRHJPMEFCWE55QUNoMFpYTjBMbU52YlhCdmMybDBaVTF2WW1sc2FYUjVMazF2WW1sc2FYUjVWR1Z6ZEZOb1lYSmtpUHJ6bUovMG5USUNBQU5KQUFWa1pXeGhlVXdBQzJSbGMzUnBibUYwYVc5dWRBQVNUR3BoZG1FdmJHRnVaeTlUZEhKcGJtYzdUQUFQYm1WNGRFUmxjM1JwYm1GMGFXOXVjUUIrQUFGNGNnQXJibVYwTG5oeGFITXVabXhoYzJndVkyOXlaUzV6YUdGeVpDNUJaMlZ1ZEZOb1lYSmtSMlZ1WlhKaGJFK3k0VDZhSVo2aUFnQUFlSElBS0c1bGRDNTRjV2h6TG1ac1lYTm9MbU52Y21VdWMyaGhjbVF1UVdkbGJuUlRhR0Z5WkVOdmNtV05EMzNwcHRNYzd3SUFBMW9BQ1dselVuVnVibWx1WjB3QUVuTm9ZWEprUTI5dVptbG5kWEpoZEdsdmJuUUFKMHh1WlhRdmVIRm9jeTltYkdGemFDOWpiM0psTDNWMGFXd3ZUWFZzZEdsVWNtVmxUV0Z3TzB3QUVITm9ZWEprUkdWemFXZHVZWFJwYjI1MEFERk1ibVYwTDNoeGFITXZabXhoYzJndlkyOXlaUzl6YUdGeVpDOUJaMlZ1ZEZOb1lYSmtSR1Z6YVdkdVlYUnBiMjQ3ZUhBQWMzSUFKVzVsZEM1NGNXaHpMbVpzWVhOb0xtTnZjbVV1ZFhScGJDNU5kV3gwYVZSeVpXVk5ZWEE4aURjeFcvN2x2QUlBQkVrQUJuQmhaRXhsYmt3QUNuTnBiWEJzWlV0bGVYTjBBQTlNYW1GMllTOTFkR2xzTDFObGREdE1BQTF6YVc1bmJHVjBiMjVMWlhsemNRQitBQWhNQUFoMGNtVmxTMlY1YzNFQWZnQUllSElBSm01bGRDNTRjV2h6TG1ac1lYTm9MbU52Y21VdWRYUnBiQzVOZFd4MGFWWmhiSFZsVFdGd2ppTTcrenpLMjJFQ0FBRk1BQXBpWVdOcmFXNW5UV0Z3ZEFBUFRHcGhkbUV2ZFhScGJDOU5ZWEE3ZUhCemNnQVhhbUYyWVM1MWRHbHNMa3hwYm10bFpFaGhjMmhOWVhBMHdFNWNFR3pBK3dJQUFWb0FDMkZqWTJWemMwOXlaR1Z5ZUhJQUVXcGhkbUV1ZFhScGJDNUlZWE5vVFdGd0JRZmF3Y01XWU5FREFBSkdBQXBzYjJGa1JtRmpkRzl5U1FBSmRHaHlaWE5vYjJ4a2VIQS9RQUFBQUFBQURIY0lBQUFBRUFBQUFBaDBBQVJ1WVcxbGMzSUFFMnBoZG1FdWRYUnBiQzVCY25KaGVVeHBjM1I0Z2RJZG1jZGhuUU1BQVVrQUJITnBlbVY0Y0FBQUFBRjNCQUFBQUFGMEFBeE5iMkpwYkdsMGVWUmxjM1I0ZEFBSkkyeHZZMkZzTFdsa2MzRUFmZ0FRQUFBQUFYY0VBQUFBQVhRQUN5TXlNRGt6TmpNeE9ERTVlSFFBRGlOallYUmxaMjl5ZVMxMGVYQmxjM0VBZmdBUUFBQUFBWGNFQUFBQUFYUUFCWE5vWVhKa2VIUUFBblJ2YzNFQWZnQVFBQUFBQVhjRUFBQUFBWFFBQlc1dlpHVkNlSFFBQkhScGJXVnpjUUIrQUJBQUFBQUJkd1FBQUFBQmRBQUVOVEF3TUhoMEFBZHdZV05yWVdkbGMzRUFmZ0FRQUFBQUJuY0VBQUFBQm5RQUIzUmxjM1JwYm1kMEFCWjBaWE4wTG1OdmJYQnZjMmwwWlUxdlltbHNhWFI1Y1FCK0FDRnhBSDRBSW5FQWZnQWhjUUIrQUNKNGRBQU5hVzR0WTI5dWRHVjRkQzF2Wm5OeEFINEFFQUFBQUFSM0JBQUFBQVIwQUFzak1UQXlNemc1TWpreU9IUUFDeU14TnpRM05UZzFPREkwZEFBTEl6RTRNekU1TXpJM01qUjBBQXNqTVRjd05UY3pOakF6TjNoMEFBbGpiR0Z6YzNCaGRHaHpjUUIrQUJBQUFBQUJkd1FBQUFBQmRBQW9kR1Z6ZEM1amIyMXdiM05wZEdWTmIySnBiR2wwZVM1TmIySnBiR2wwZVZSbGMzUlRhR0Z5WkhoNEFBQUFBQTV6Y2dBWGFtRjJZUzUxZEdsc0xreHBibXRsWkVoaGMyaFRaWFRZYk5kYWxkMHFIZ0lBQUhoeUFCRnFZWFpoTG5WMGFXd3VTR0Z6YUZObGRMcEVoWldXdUxjMEF3QUFlSEIzREFBQUFCQS9RQUFBQUFBQUNIRUFmZ0FQY1FCK0FCTnhBSDRBRm5FQWZnQVpjUUIrQUJ4eEFINEFIM0VBZmdBamNRQitBQ2w0YzNFQWZnQXNkd3dBQUFBUVAwQUFBQUFBQUFOeEFINEFFM0VBZmdBV2NRQitBQ2w0YzNFQWZnQXNkd3dBQUFBUVAwQUFBQUFBQUFCNGMzSUFMMjVsZEM1NGNXaHpMbVpzWVhOb0xtTnZjbVV1YzJoaGNtUXVRV2RsYm5SVGFHRnlaRVJsYzJsbmJtRjBhVzl1QUFBQUFBQUFBQUVDQUFKTUFBdGpkWE4wYjIxVGFHRnlaSEVBZmdBQlRBQU5jM1JoYm1SaGNtUlRhR0Z5WkhRQVJFeHVaWFF2ZUhGb2N5OW1iR0Z6YUM5amIzSmxMM05vWVhKa0wwRm5aVzUwVTJoaGNtUkVaWE5wWjI1aGRHbHZiaVJUZEdGdVpHRnlaRUZuWlc1MFUyaGhjbVE3ZUhCMEFBaE5UMEpKVEVsVVdYQUFBQk9JY1FCK0FCdDBBQVZ1YjJSbFFRPT1xAH4AGHQIlHJPMEFCWE55QURCdVpYUXVlSEZvY3k1bWJHRnphQzUzWldKVGIyTnJaWFF1VjJWaVUyOWphMlYwVFdWemMyRm5hVzVuVTJoaGNtUUFBQUFBQUFBQUFnSUFBSGh5QUROdVpYUXVlSEZvY3k1bWJHRnphQzVqYjNKbExuTjFjSEJ2Y25RdVRtRnRaVUpoYzJWa1RXVnpjMkZuYVc1blUyaGhjbVFBTHJkSHVDRzZod0lBQUhoeUFESnVaWFF1ZUhGb2N5NW1iR0Z6YUM1amIzSmxMbk4xY0hCdmNuUXVRV0p6ZEhKaFkzUk5aWE56WVdkcGJtZFRhR0Z5WkpkVmxyZTNHMmVtQWdBQWVISUFLRzVsZEM1NGNXaHpMbVpzWVhOb0xtTnZjbVV1YzJoaGNtUXVRV2RsYm5SVGFHRnlaRU52Y21XTkQzM3BwdE1jN3dJQUExb0FDV2x6VW5WdWJtbHVaMHdBRW5Ob1lYSmtRMjl1Wm1sbmRYSmhkR2x2Ym5RQUoweHVaWFF2ZUhGb2N5OW1iR0Z6YUM5amIzSmxMM1YwYVd3dlRYVnNkR2xVY21WbFRXRndPMHdBRUhOb1lYSmtSR1Z6YVdkdVlYUnBiMjUwQURGTWJtVjBMM2h4YUhNdlpteGhjMmd2WTI5eVpTOXphR0Z5WkM5QloyVnVkRk5vWVhKa1JHVnphV2R1WVhScGIyNDdlSEFBYzNJQUpXNWxkQzU0Y1doekxtWnNZWE5vTG1OdmNtVXVkWFJwYkM1TmRXeDBhVlJ5WldWTllYQThpRGN4Vy83bHZBSUFCRWtBQm5CaFpFeGxia3dBQ25OcGJYQnNaVXRsZVhOMEFBOU1hbUYyWVM5MWRHbHNMMU5sZER0TUFBMXphVzVuYkdWMGIyNUxaWGx6Y1FCK0FBaE1BQWgwY21WbFMyVjVjM0VBZmdBSWVISUFKbTVsZEM1NGNXaHpMbVpzWVhOb0xtTnZjbVV1ZFhScGJDNU5kV3gwYVZaaGJIVmxUV0Z3amlNNyt6eksyMkVDQUFGTUFBcGlZV05yYVc1blRXRndkQUFQVEdwaGRtRXZkWFJwYkM5TllYQTdlSEJ6Y2dBWGFtRjJZUzUxZEdsc0xreHBibXRsWkVoaGMyaE5ZWEEwd0U1Y0VHekErd0lBQVZvQUMyRmpZMlZ6YzA5eVpHVnllSElBRVdwaGRtRXVkWFJwYkM1SVlYTm9UV0Z3QlFmYXdjTVdZTkVEQUFKR0FBcHNiMkZrUm1GamRHOXlTUUFKZEdoeVpYTm9iMnhrZUhBL1FBQUFBQUFBREhjSUFBQUFFQUFBQUFaMEFBUnVZVzFsYzNJQUUycGhkbUV1ZFhScGJDNUJjbkpoZVV4cGMzUjRnZElkbWNkaG5RTUFBVWtBQkhOcGVtVjRjQUFBQUFGM0JBQUFBQUYwQUFsdFpYTnpZV2RwYm1kNGRBQUpJMnh2WTJGc0xXbGtjM0VBZmdBUUFBQUFBWGNFQUFBQUFYUUFDaU0xTlRnMk16ZzJPRFo0ZEFBT0kyTmhkR1ZuYjNKNUxYUjVjR1Z6Y1FCK0FCQUFBQUFCZHdRQUFBQUJkQUFGYzJoaGNtUjRkQUFIY0dGamEyRm5aWE54QUg0QUVBQUFBQVozQkFBQUFBWjBBQWQwWlhOMGFXNW5kQUFXZEdWemRDNWpiMjF3YjNOcGRHVk5iMkpwYkdsMGVYRUFmZ0FiY1FCK0FCeHhBSDRBRzNFQWZnQWNlSFFBRFdsdUxXTnZiblJsZUhRdGIyWnpjUUIrQUJBQUFBQUVkd1FBQUFBRWRBQUxJekV3TWpNNE9USTVNamgwQUFzak1UYzBOelU0TlRneU5IUUFDeU14T0RNeE9UTXlOekkwZEFBTEl6RTNNRFUzTXpZd016ZDRkQUFKWTJ4aGMzTndZWFJvYzNFQWZnQVFBQUFBQVhjRUFBQUFBWFFBTUc1bGRDNTRjV2h6TG1ac1lYTm9MbmRsWWxOdlkydGxkQzVYWldKVGIyTnJaWFJOWlhOellXZHBibWRUYUdGeVpIaDRBQUFBQUE1emNnQVhhbUYyWVM1MWRHbHNMa3hwYm10bFpFaGhjMmhUWlhUWWJOZGFsZDBxSGdJQUFIaHlBQkZxWVhaaExuVjBhV3d1U0dGemFGTmxkTHBFaFpXV3VMYzBBd0FBZUhCM0RBQUFBQkEvUUFBQUFBQUFCbkVBZmdBUGNRQitBQk54QUg0QUZuRUFmZ0FaY1FCK0FCMXhBSDRBSTNoemNRQitBQ1ozREFBQUFCQS9RQUFBQUFBQUEzRUFmZ0FUY1FCK0FCWnhBSDRBSTNoemNRQitBQ1ozREFBQUFCQS9RQUFBQUFBQUFIaHpjZ0F2Ym1WMExuaHhhSE11Wm14aGMyZ3VZMjl5WlM1emFHRnlaQzVCWjJWdWRGTm9ZWEprUkdWemFXZHVZWFJwYjI0QUFBQUFBQUFBQVFJQUFrd0FDMk4xYzNSdmJWTm9ZWEprZEFBU1RHcGhkbUV2YkdGdVp5OVRkSEpwYm1jN1RBQU5jM1JoYm1SaGNtUlRhR0Z5WkhRQVJFeHVaWFF2ZUhGb2N5OW1iR0Z6YUM5amIzSmxMM05vWVhKa0wwRm5aVzUwVTJoaGNtUkVaWE5wWjI1aGRHbHZiaVJUZEdGdVpHRnlaRUZuWlc1MFUyaGhjbVE3ZUhCd2ZuSUFRbTVsZEM1NGNXaHpMbVpzWVhOb0xtTnZjbVV1YzJoaGNtUXVRV2RsYm5SVGFHRnlaRVJsYzJsbmJtRjBhVzl1SkZOMFlXNWtZWEprUVdkbGJuUlRhR0Z5WkFBQUFBQUFBQUFBRWdBQWVISUFEbXBoZG1FdWJHRnVaeTVGYm5WdEFBQUFBQUFBQUFBU0FBQjRjSFFBQ1UxRlUxTkJSMGxPUnc9PXEAfgAcdAdcck8wQUJYTnlBQmgwWlhOMGFXNW5Ma1ZqYUc5VVpYTjBhVzVuVTJoaGNtUklYdnVSQkxWYzJnSUFBa2tBQ1dWNGFYUkJablJsY2t3QUNXVjRhWFJVYVcxbGNuUUFFVXhxWVhaaEwzVjBhV3d2VkdsdFpYSTdlSElBS0c1bGRDNTRjV2h6TG1ac1lYTm9MbU52Y21VdWMyaGhjbVF1UVdkbGJuUlRhR0Z5WkVOdmNtV05EMzNwcHRNYzd3SUFBMW9BQ1dselVuVnVibWx1WjB3QUVuTm9ZWEprUTI5dVptbG5kWEpoZEdsdmJuUUFKMHh1WlhRdmVIRm9jeTltYkdGemFDOWpiM0psTDNWMGFXd3ZUWFZzZEdsVWNtVmxUV0Z3TzB3QUVITm9ZWEprUkdWemFXZHVZWFJwYjI1MEFERk1ibVYwTDNoeGFITXZabXhoYzJndlkyOXlaUzl6YUdGeVpDOUJaMlZ1ZEZOb1lYSmtSR1Z6YVdkdVlYUnBiMjQ3ZUhBQWMzSUFKVzVsZEM1NGNXaHpMbVpzWVhOb0xtTnZjbVV1ZFhScGJDNU5kV3gwYVZSeVpXVk5ZWEE4aURjeFcvN2x2QUlBQkVrQUJuQmhaRXhsYmt3QUNuTnBiWEJzWlV0bGVYTjBBQTlNYW1GMllTOTFkR2xzTDFObGREdE1BQTF6YVc1bmJHVjBiMjVMWlhsemNRQitBQWRNQUFoMGNtVmxTMlY1YzNFQWZnQUhlSElBSm01bGRDNTRjV2h6TG1ac1lYTm9MbU52Y21VdWRYUnBiQzVOZFd4MGFWWmhiSFZsVFdGd2ppTTcrenpLMjJFQ0FBRk1BQXBpWVdOcmFXNW5UV0Z3ZEFBUFRHcGhkbUV2ZFhScGJDOU5ZWEE3ZUhCemNnQVhhbUYyWVM1MWRHbHNMa3hwYm10bFpFaGhjMmhOWVhBMHdFNWNFR3pBK3dJQUFWb0FDMkZqWTJWemMwOXlaR1Z5ZUhJQUVXcGhkbUV1ZFhScGJDNUlZWE5vVFdGd0JRZmF3Y01XWU5FREFBSkdBQXBzYjJGa1JtRmpkRzl5U1FBSmRHaHlaWE5vYjJ4a2VIQS9RQUFBQUFBQURIY0lBQUFBRUFBQUFBWjBBQVJ1WVcxbGMzSUFFMnBoZG1FdWRYUnBiQzVCY25KaGVVeHBjM1I0Z2RJZG1jZGhuUU1BQVVrQUJITnBlbVY0Y0FBQUFBRjNCQUFBQUFGMEFBdEZZMmh2VkdWemRHbHVaM2gwQUFramJHOWpZV3d0YVdSemNRQitBQThBQUFBQmR3UUFBQUFCZEFBTEl6RXhORGt6TVRrMk5qUjRkQUFPSTJOaGRHVm5iM0o1TFhSNWNHVnpjUUIrQUE4QUFBQUJkd1FBQUFBQmRBQUZjMmhoY21SNGRBQUhjR0ZqYTJGblpYTnhBSDRBRHdBQUFBWjNCQUFBQUFaMEFBZDBaWE4wYVc1bmRBQVdkR1Z6ZEM1amIyMXdiM05wZEdWTmIySnBiR2wwZVhFQWZnQWFjUUIrQUJ0eEFINEFHbkVBZmdBYmVIUUFEV2x1TFdOdmJuUmxlSFF0YjJaemNRQitBQThBQUFBRWR3UUFBQUFFZEFBTEl6RXdNak00T1RJNU1qaDBBQXNqTVRjME56VTROVGd5TkhRQUN5TXhPRE14T1RNeU56STBkQUFMSXpFM01EVTNNell3TXpkNGRBQUpZMnhoYzNOd1lYUm9jM0VBZmdBUEFBQUFBWGNFQUFBQUFYUUFHSFJsYzNScGJtY3VSV05vYjFSbGMzUnBibWRUYUdGeVpIaDRBQUFBQUE1emNnQVhhbUYyWVM1MWRHbHNMa3hwYm10bFpFaGhjMmhUWlhUWWJOZGFsZDBxSGdJQUFIaHlBQkZxWVhaaExuVjBhV3d1U0dGemFGTmxkTHBFaFpXV3VMYzBBd0FBZUhCM0RBQUFBQkEvUUFBQUFBQUFCbkVBZmdBT2NRQitBQkp4QUg0QUZYRUFmZ0FZY1FCK0FCeHhBSDRBSW5oemNRQitBQ1YzREFBQUFCQS9RQUFBQUFBQUEzRUFmZ0FTY1FCK0FCVnhBSDRBSW5oemNRQitBQ1YzREFBQUFCQS9RQUFBQUFBQUFIaHpjZ0F2Ym1WMExuaHhhSE11Wm14aGMyZ3VZMjl5WlM1emFHRnlaQzVCWjJWdWRGTm9ZWEprUkdWemFXZHVZWFJwYjI0QUFBQUFBQUFBQVFJQUFrd0FDMk4xYzNSdmJWTm9ZWEprZEFBU1RHcGhkbUV2YkdGdVp5OVRkSEpwYm1jN1RBQU5jM1JoYm1SaGNtUlRhR0Z5WkhRQVJFeHVaWFF2ZUhGb2N5OW1iR0Z6YUM5amIzSmxMM05vWVhKa0wwRm5aVzUwVTJoaGNtUkVaWE5wWjI1aGRHbHZiaVJUZEdGdVpHRnlaRUZuWlc1MFUyaGhjbVE3ZUhCMEFBOTBaWE4wTDIxdmJtbDBiM0pwYm1kdy8vLy8vM0E9eA==\"}"}].
+. [ node:nodeB.0         ] registered an entity of type [AGENT]. Provided name was [agentA1].
+. [ node:nodeB.0         ] Starting agent [agentA1] after moving...
+. [ testing-agentA1 >>>> ] testing started.
+> [ agentA1~             ] agent [agentA1] has shards [{TESTING=testing.PingTestShard@66b713a2, MOBILITY=test.compositeMobility.MobilityTestShard@73a1947e, messaging=net.xqhs.flash.webSocket.WebSocketMessagingShard@35d95b28, test/monitoring=testing.EchoTestingShard@6b2d7432}] after deserialization in order: [[messaging, test/monitoring, MOBILITY, TESTING]]
+> [ agentA1~             ] agent has moved successfully; migration managed by [agent]
+> [ agentA1~             ] Agent state is soon [STARTING][transient]
+. [ pylonB               ] Registered entity [agentA1]/[net.xqhs.flash.core.support.AbstractMessagingShard$1@3f2e1e3b] with this pylon [net.xqhs.flash.webSocket.WebSocketPylon@7ab2bfe1]: [{"nodeName":"nodeB","entityName":"agentA1"}]
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AGENT_START], TO_FROM_TRANSIENT=[MOVE]}]
+. [ websocket-server     ] Registered entity [agentA1] on [nodeB].
+. [ websocket-server     ] entities: [[nodeB, agentA2, agentB1, agentA1, nodeA]] ; nodes: [[nodeA, nodeB]] ; node-entities: [{nodeA=[nodeA, agentA2], nodeB=[nodeB, agentB1, agentA1]}]
+> [ agentA1~             ] state is now [RUNNING]
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AFTER_MOVE]}]
+Sending the message....
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeB","destination":"agentB1\/pong","source":"agentA1\/ping","content":"ping-no 4"}].
+> [ testing-agentB1 >>>> ] agent [agentB1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 4], destination-element=[pong], destination-complete=[agentB1/pong], source-element=[agentA1, ping]}]
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeB","destination":"agentA2\/pong","source":"agentA1\/ping","content":"ping-no 4"}].
+> [ testing-agentA2 >>>> ] agent [agentA2] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 4], destination-element=[pong], destination-complete=[agentA2/pong], source-element=[agentA1, ping]}]
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeB","destination":"agentA1\/ping","source":"agentB1\/pong","content":"ping-no 4 reply"}].
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 4 reply], destination-element=[ping], destination-complete=[agentA1/ping], source-element=[agentB1, pong]}]
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeA","destination":"agentA1\/ping","source":"agentA2\/pong","content":"ping-no 4 reply"}].
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 4 reply], destination-element=[ping], destination-complete=[agentA1/ping], source-element=[agentA2, pong]}]
+Sending the message....
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeB","destination":"agentB1\/pong","source":"agentA1\/ping","content":"ping-no 5"}].
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeB","destination":"agentA2\/pong","source":"agentA1\/ping","content":"ping-no 5"}].
+> [ testing-agentB1 >>>> ] agent [agentB1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 5], destination-element=[pong], destination-complete=[agentB1/pong], source-element=[agentA1, ping]}]
+> [ testing-agentA2 >>>> ] agent [agentA2] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 5], destination-element=[pong], destination-complete=[agentA2/pong], source-element=[agentA1, ping]}]
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeB","destination":"agentA1\/ping","source":"agentB1\/pong","content":"ping-no 5 reply"}].
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeA","destination":"agentA1\/ping","source":"agentA2\/pong","content":"ping-no 5 reply"}].
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 5 reply], destination-element=[ping], destination-complete=[agentA1/ping], source-element=[agentB1, pong]}]
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 5 reply], destination-element=[ping], destination-complete=[agentA1/ping], source-element=[agentA2, pong]}]
+Sending the message....
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeB","destination":"agentB1\/pong","source":"agentA1\/ping","content":"ping-no 6"}].
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeB","destination":"agentA2\/pong","source":"agentA1\/ping","content":"ping-no 6"}].
+> [ testing-agentB1 >>>> ] agent [agentB1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 6], destination-element=[pong], destination-complete=[agentB1/pong], source-element=[agentA1, ping]}]
+> [ testing-agentA2 >>>> ] agent [agentA2] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 6], destination-element=[pong], destination-complete=[agentA2/pong], source-element=[agentA1, ping]}]
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeB","destination":"agentA1\/ping","source":"agentB1\/pong","content":"ping-no 6 reply"}].
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeA","destination":"agentA1\/ping","source":"agentA2\/pong","content":"ping-no 6 reply"}].
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 6 reply], destination-element=[ping], destination-complete=[agentA1/ping], source-element=[agentB1, pong]}]
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 6 reply], destination-element=[ping], destination-complete=[agentA1/ping], source-element=[agentA2, pong]}]
+> [ agentA1~             ] preparing to move to [nodeA]; managed by [agent]
+> [ agentA1~             ] Agent state is soon [STOPPING][transient]
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[BEFORE_MOVE], TARGET=[nodeA]}]
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AGENT_STOP], TO_FROM_TRANSIENT=[MOVE], TARGET=[nodeA]}]
+> [ testing-agentA1 >>>> ] log exit.
+. [ pylonB               ] Unregistered entity [agentA1] from this pylon [net.xqhs.flash.webSocket.WebSocketPylon@7ab2bfe1]: [{"nodeName":"nodeB","entityName":"agentA1","unregister":"unregister"}]
+> [ agentA1~             ] state is now [TRANSIENT]
+> [ agentA1~             ] log exit.
+> [ agentA1~             ] Serializing shards [{TESTING=testing.PingTestShard@66b713a2, MOBILITY=test.compositeMobility.MobilityTestShard@73a1947e, messaging=net.xqhs.flash.webSocket.WebSocketMessagingShard@35d95b28, test/monitoring=testing.EchoTestingShard@6b2d7432}] with the order [[messaging, test/monitoring, MOBILITY, TESTING]].
+. [ websocket-server     ] Unregistered entity [agentA1] on [nodeB].
+. [ websocket-server     ] entities: [[nodeB, agentA2, agentB1, nodeA]] ; nodes: [[nodeA, nodeB]] ; node-entities: [{nodeA=[nodeA, agentA2], nodeB=[nodeB, agentB1]}]
+> [ agentA1~             ] [testing.PingTestShard@66b713a2] is serializable
+> [ agentA1~             ] [test.compositeMobility.MobilityTestShard@73a1947e] is serializable
+> [ agentA1~             ] [net.xqhs.flash.webSocket.WebSocketMessagingShard@35d95b28] is serializable
+> [ agentA1~             ] [testing.EchoTestingShard@6b2d7432] is serializable
+. [ node:nodeB.0         ] Send message with agent [agentA1] to [nodeA]
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeB","destination":"nodeA\/node","source":"nodeB\/node","content":"{\"name\":\"receive_agent\",\"params\":\"rO0ABXNyADhuZXQueHFocy5mbGFzaC5jb3JlLm1vYmlsZUNvbXBvc2l0ZS5Nb2JpbGVDb21wb3NpdGVBZ2VudPu4iz8DiCJKAgACTAAebm9uU2VyaWFsaXplZFNoYXJkRGVzaWduYXRpb25zdAAPTGphdmEvdXRpbC9NYXA7TAAQc2VyaWFsaXplZFNoYXJkc3EAfgABeHIALG5ldC54cWhzLmZsYXNoLmNvcmUuY29tcG9zaXRlLkNvbXBvc2l0ZUFnZW50sTeuitIRT4sCAAhaAA1VU0VfTE9DQUxfTE9HTAAMYWdlbnRDb250ZXh0dAAVTGphdmEvdXRpbC9BcnJheUxpc3Q7TAAJYWdlbnROYW1ldAASTGphdmEvbGFuZy9TdHJpbmc7TAAKYWdlbnRTdGF0ZXQAOUxuZXQveHFocy9mbGFzaC9jb3JlL2NvbXBvc2l0ZS9Db21wb3NpdGVBZ2VudCRBZ2VudFN0YXRlO0wACWFzQ29udGV4dHQAKExuZXQveHFocy9mbGFzaC9jb3JlL0VudGl0eSRFbnRpdHlQcm94eTtMAApldmVudFF1ZXVldAAqTGphdmEvdXRpbC9jb25jdXJyZW50L0xpbmtlZEJsb2NraW5nUXVldWU7TAAKc2hhcmRPcmRlcnEAfgADTAAGc2hhcmRzcQB+AAF4cAFzcgATamF2YS51dGlsLkFycmF5TGlzdHiB0h2Zx2GdAwABSQAEc2l6ZXhwAAAAAHcEAAAAAHh0AAdhZ2VudEExfnIAN25ldC54cWhzLmZsYXNoLmNvcmUuY29tcG9zaXRlLkNvbXBvc2l0ZUFnZW50JEFnZW50U3RhdGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAlUUkFOU0lFTlRzcgBbbmV0LnhxaHMuZmxhc2guY29yZS5tb2JpbGVDb21wb3NpdGUuTW9iaWxlQ29tcG9zaXRlQWdlbnQkTW9iaWxlQ29tcG9zaXRlQWdlbnRTaGFyZENvbnRhaW5lcjp2T2dCY+ldAgABTAAGdGhpcyQwdAA6TG5ldC94cWhzL2ZsYXNoL2NvcmUvbW9iaWxlQ29tcG9zaXRlL01vYmlsZUNvbXBvc2l0ZUFnZW50O3hyAEluZXQueHFocy5mbGFzaC5jb3JlLmNvbXBvc2l0ZS5Db21wb3NpdGVBZ2VudCRDb21wb3NpdGVBZ2VudFNoYXJkQ29udGFpbmVyOnZPZ0Jj6V0CAAJMAAVhZ2VudHQALkxuZXQveHFocy9mbGFzaC9jb3JlL2NvbXBvc2l0ZS9Db21wb3NpdGVBZ2VudDtMAAZ0aGlzJDBxAH4AE3hwcQB+AAhxAH4ACHEAfgAIcHNxAH4ACQAAAAR3BAAAAARzcgAvbmV0LnhxaHMuZmxhc2guY29yZS5zaGFyZC5BZ2VudFNoYXJkRGVzaWduYXRpb24AAAAAAAAAAQIAAkwAC2N1c3RvbVNoYXJkcQB+AARMAA1zdGFuZGFyZFNoYXJkdABETG5ldC94cWhzL2ZsYXNoL2NvcmUvc2hhcmQvQWdlbnRTaGFyZERlc2lnbmF0aW9uJFN0YW5kYXJkQWdlbnRTaGFyZDt4cHB+cgBCbmV0LnhxaHMuZmxhc2guY29yZS5zaGFyZC5BZ2VudFNoYXJkRGVzaWduYXRpb24kU3RhbmRhcmRBZ2VudFNoYXJkAAAAAAAAAAASAAB4cQB+AA10AAlNRVNTQUdJTkdzcQB+ABZ0AA90ZXN0L21vbml0b3Jpbmdwc3EAfgAWdAAITU9CSUxJVFlwc3EAfgAWdAAHVEVTVElOR3B4c3IAEWphdmEudXRpbC5IYXNoTWFwBQfawcMWYNEDAAJGAApsb2FkRmFjdG9ySQAJdGhyZXNob2xkeHA\/QAAAAAAADHcIAAAAEAAAAAB4c3EAfgAiP0AAAAAAAAB3CAAAABAAAAAAeHNxAH4AIj9AAAAAAAAMdwgAAAAQAAAABHEAfgAgdAicck8wQUJYTnlBQlYwWlhOMGFXNW5MbEJwYm1kVVpYTjBVMmhoY21SSVh2dVJCTFZjMmdJQUJsb0FCR3RsWlhCSkFBRnVTUUFHY0dWeWFXOWtTUUFFZEdsamEwd0FDMjkwYUdWeVFXZGxiblJ6ZEFBUVRHcGhkbUV2ZFhScGJDOU1hWE4wTzB3QUNYUm9hWE5CWjJWdWRIUUFFa3hxWVhaaEwyeGhibWN2VTNSeWFXNW5PM2h5QUN0dVpYUXVlSEZvY3k1bWJHRnphQzVqYjNKbExuTm9ZWEprTGtGblpXNTBVMmhoY21SSFpXNWxjbUZzVDdMaFBwb2hucUlDQUFCNGNnQW9ibVYwTG5oeGFITXVabXhoYzJndVkyOXlaUzV6YUdGeVpDNUJaMlZ1ZEZOb1lYSmtRMjl5WlkwUGZlbW0weHp2QWdBRFdnQUphWE5TZFc1dWFXNW5UQUFTYzJoaGNtUkRiMjVtYVdkMWNtRjBhVzl1ZEFBblRHNWxkQzk0Y1doekwyWnNZWE5vTDJOdmNtVXZkWFJwYkM5TmRXeDBhVlJ5WldWTllYQTdUQUFRYzJoaGNtUkVaWE5wWjI1aGRHbHZiblFBTVV4dVpYUXZlSEZvY3k5bWJHRnphQzlqYjNKbEwzTm9ZWEprTDBGblpXNTBVMmhoY21SRVpYTnBaMjVoZEdsdmJqdDRjQUJ6Y2dBbGJtVjBMbmh4YUhNdVpteGhjMmd1WTI5eVpTNTFkR2xzTGsxMWJIUnBWSEpsWlUxaGNEeUlOekZiL3VXOEFnQUVTUUFHY0dGa1RHVnVUQUFLYzJsdGNHeGxTMlY1YzNRQUQweHFZWFpoTDNWMGFXd3ZVMlYwTzB3QURYTnBibWRzWlhSdmJrdGxlWE54QUg0QUNVd0FDSFJ5WldWTFpYbHpjUUIrQUFsNGNnQW1ibVYwTG5oeGFITXVabXhoYzJndVkyOXlaUzUxZEdsc0xrMTFiSFJwVm1Gc2RXVk5ZWENPSXp2N1BNcmJZUUlBQVV3QUNtSmhZMnRwYm1kTllYQjBBQTlNYW1GMllTOTFkR2xzTDAxaGNEdDRjSE55QUJkcVlYWmhMblYwYVd3dVRHbHVhMlZrU0dGemFFMWhjRFRBVGx3UWJNRDdBZ0FCV2dBTFlXTmpaWE56VDNKa1pYSjRjZ0FSYW1GMllTNTFkR2xzTGtoaGMyaE5ZWEFGQjlyQnd4WmcwUU1BQWtZQUNteHZZV1JHWVdOMGIzSkpBQWwwYUhKbGMyaHZiR1I0Y0Q5QUFBQUFBQUFNZHdnQUFBQVFBQUFBQ1hRQUJHNWhiV1Z6Y2dBVGFtRjJZUzUxZEdsc0xrRnljbUY1VEdsemRIaUIwaDJaeDJHZEF3QUJTUUFFYzJsNlpYaHdBQUFBQVhjRUFBQUFBWFFBQ0ZCcGJtZFVaWE4wZUhRQUNTTnNiMk5oYkMxcFpITnhBSDRBRVFBQUFBRjNCQUFBQUFGMEFBc2pNakEzTkRRd056VXdNM2gwQUE0alkyRjBaV2R2Y25rdGRIbHdaWE54QUg0QUVRQUFBQUYzQkFBQUFBRjBBQVZ6YUdGeVpIaDBBQVZsZG1WeWVYTnhBSDRBRVFBQUFBRjNCQUFBQUFGMEFBTTFNREI0ZEFBQmJuTnhBSDRBRVFBQUFBRjNCQUFBQUFGMEFBSXhNSGgwQUFwdmRHaGxja0ZuWlc1MGMzRUFmZ0FSQUFBQUFuY0VBQUFBQW5RQUIyRm5aVzUwUWpGMEFBZGhaMlZ1ZEVFeWVIUUFCM0JoWTJ0aFoyVnpjUUIrQUJFQUFBQUdkd1FBQUFBR2RBQUhkR1Z6ZEdsdVozUUFGblJsYzNRdVkyOXRjRzl6YVhSbFRXOWlhV3hwZEhseEFINEFKbkVBZmdBbmNRQitBQ1p4QUg0QUozaDBBQTFwYmkxamIyNTBaWGgwTFc5bWMzRUFmZ0FSQUFBQUJIY0VBQUFBQkhRQUN5TXhNREl6T0RreU9USTRkQUFMSXpFM05EYzFPRFU0TWpSMEFBc2pNVGd6TVRrek1qY3lOSFFBQ3lNeE56QTFOek0yTURNM2VIUUFDV05zWVhOemNHRjBhSE54QUg0QUVRQUFBQUYzQkFBQUFBRjBBQlYwWlhOMGFXNW5MbEJwYm1kVVpYTjBVMmhoY21SNGVBQUFBQUFPYzNJQUYycGhkbUV1ZFhScGJDNU1hVzVyWldSSVlYTm9VMlYwMkd6WFdwWGRLaDRDQUFCNGNnQVJhbUYyWVM1MWRHbHNMa2hoYzJoVFpYUzZSSVdWbHJpM05BTUFBSGh3ZHd3QUFBQVFQMEFBQUFBQUFBbHhBSDRBRUhFQWZnQVVjUUIrQUJkeEFINEFHbkVBZmdBZGNRQitBQ0J4QUg0QUpIRUFmZ0FvY1FCK0FDNTRjM0VBZmdBeGR3d0FBQUFFUDBBQUFBQUFBQU54QUg0QUZIRUFmZ0FYY1FCK0FDNTRjM0VBZmdBeGR3d0FBQUFCUDBBQUFBQUFBQUI0YzNJQUwyNWxkQzU0Y1doekxtWnNZWE5vTG1OdmNtVXVjMmhoY21RdVFXZGxiblJUYUdGeVpFUmxjMmxuYm1GMGFXOXVBQUFBQUFBQUFBRUNBQUpNQUF0amRYTjBiMjFUYUdGeVpIRUFmZ0FDVEFBTmMzUmhibVJoY21SVGFHRnlaSFFBUkV4dVpYUXZlSEZvY3k5bWJHRnphQzlqYjNKbEwzTm9ZWEprTDBGblpXNTBVMmhoY21SRVpYTnBaMjVoZEdsdmJpUlRkR0Z1WkdGeVpFRm5aVzUwVTJoaGNtUTdlSEIwQUFkVVJWTlVTVTVIY0FBQUFBQUtBQUFCOUFBQUFBWnpjUUIrQUJFQUFBQUNkd1FBQUFBQ2NRQitBQ0p4QUg0QUkzaDBBQWRoWjJWdWRFRXhxAH4AHnQIRHJPMEFCWE55QUNoMFpYTjBMbU52YlhCdmMybDBaVTF2WW1sc2FYUjVMazF2WW1sc2FYUjVWR1Z6ZEZOb1lYSmtpUHJ6bUovMG5USUNBQU5KQUFWa1pXeGhlVXdBQzJSbGMzUnBibUYwYVc5dWRBQVNUR3BoZG1FdmJHRnVaeTlUZEhKcGJtYzdUQUFQYm1WNGRFUmxjM1JwYm1GMGFXOXVjUUIrQUFGNGNnQXJibVYwTG5oeGFITXVabXhoYzJndVkyOXlaUzV6YUdGeVpDNUJaMlZ1ZEZOb1lYSmtSMlZ1WlhKaGJFK3k0VDZhSVo2aUFnQUFlSElBS0c1bGRDNTRjV2h6TG1ac1lYTm9MbU52Y21VdWMyaGhjbVF1UVdkbGJuUlRhR0Z5WkVOdmNtV05EMzNwcHRNYzd3SUFBMW9BQ1dselVuVnVibWx1WjB3QUVuTm9ZWEprUTI5dVptbG5kWEpoZEdsdmJuUUFKMHh1WlhRdmVIRm9jeTltYkdGemFDOWpiM0psTDNWMGFXd3ZUWFZzZEdsVWNtVmxUV0Z3TzB3QUVITm9ZWEprUkdWemFXZHVZWFJwYjI1MEFERk1ibVYwTDNoeGFITXZabXhoYzJndlkyOXlaUzl6YUdGeVpDOUJaMlZ1ZEZOb1lYSmtSR1Z6YVdkdVlYUnBiMjQ3ZUhBQWMzSUFKVzVsZEM1NGNXaHpMbVpzWVhOb0xtTnZjbVV1ZFhScGJDNU5kV3gwYVZSeVpXVk5ZWEE4aURjeFcvN2x2QUlBQkVrQUJuQmhaRXhsYmt3QUNuTnBiWEJzWlV0bGVYTjBBQTlNYW1GMllTOTFkR2xzTDFObGREdE1BQTF6YVc1bmJHVjBiMjVMWlhsemNRQitBQWhNQUFoMGNtVmxTMlY1YzNFQWZnQUllSElBSm01bGRDNTRjV2h6TG1ac1lYTm9MbU52Y21VdWRYUnBiQzVOZFd4MGFWWmhiSFZsVFdGd2ppTTcrenpLMjJFQ0FBRk1BQXBpWVdOcmFXNW5UV0Z3ZEFBUFRHcGhkbUV2ZFhScGJDOU5ZWEE3ZUhCemNnQVhhbUYyWVM1MWRHbHNMa3hwYm10bFpFaGhjMmhOWVhBMHdFNWNFR3pBK3dJQUFWb0FDMkZqWTJWemMwOXlaR1Z5ZUhJQUVXcGhkbUV1ZFhScGJDNUlZWE5vVFdGd0JRZmF3Y01XWU5FREFBSkdBQXBzYjJGa1JtRmpkRzl5U1FBSmRHaHlaWE5vYjJ4a2VIQS9RQUFBQUFBQURIY0lBQUFBRUFBQUFBaDBBQVJ1WVcxbGMzSUFFMnBoZG1FdWRYUnBiQzVCY25KaGVVeHBjM1I0Z2RJZG1jZGhuUU1BQVVrQUJITnBlbVY0Y0FBQUFBRjNCQUFBQUFGMEFBeE5iMkpwYkdsMGVWUmxjM1I0ZEFBSkkyeHZZMkZzTFdsa2MzRUFmZ0FRQUFBQUFYY0VBQUFBQVhRQUN5TXlNRGt6TmpNeE9ERTVlSFFBRGlOallYUmxaMjl5ZVMxMGVYQmxjM0VBZmdBUUFBQUFBWGNFQUFBQUFYUUFCWE5vWVhKa2VIUUFBblJ2YzNFQWZnQVFBQUFBQVhjRUFBQUFBWFFBQlc1dlpHVkNlSFFBQkhScGJXVnpjUUIrQUJBQUFBQUJkd1FBQUFBQmRBQUVOVEF3TUhoMEFBZHdZV05yWVdkbGMzRUFmZ0FRQUFBQUJuY0VBQUFBQm5RQUIzUmxjM1JwYm1kMEFCWjBaWE4wTG1OdmJYQnZjMmwwWlUxdlltbHNhWFI1Y1FCK0FDRnhBSDRBSW5FQWZnQWhjUUIrQUNKNGRBQU5hVzR0WTI5dWRHVjRkQzF2Wm5OeEFINEFFQUFBQUFSM0JBQUFBQVIwQUFzak1UQXlNemc1TWpreU9IUUFDeU14TnpRM05UZzFPREkwZEFBTEl6RTRNekU1TXpJM01qUjBBQXNqTVRjd05UY3pOakF6TjNoMEFBbGpiR0Z6YzNCaGRHaHpjUUIrQUJBQUFBQUJkd1FBQUFBQmRBQW9kR1Z6ZEM1amIyMXdiM05wZEdWTmIySnBiR2wwZVM1TmIySnBiR2wwZVZSbGMzUlRhR0Z5WkhoNEFBQUFBQTV6Y2dBWGFtRjJZUzUxZEdsc0xreHBibXRsWkVoaGMyaFRaWFRZYk5kYWxkMHFIZ0lBQUhoeUFCRnFZWFpoTG5WMGFXd3VTR0Z6YUZObGRMcEVoWldXdUxjMEF3QUFlSEIzREFBQUFCQS9RQUFBQUFBQUNIRUFmZ0FQY1FCK0FCTnhBSDRBRm5FQWZnQVpjUUIrQUJ4eEFINEFIM0VBZmdBamNRQitBQ2w0YzNFQWZnQXNkd3dBQUFBRVAwQUFBQUFBQUFOeEFINEFFM0VBZmdBV2NRQitBQ2w0YzNFQWZnQXNkd3dBQUFBQlAwQUFBQUFBQUFCNGMzSUFMMjVsZEM1NGNXaHpMbVpzWVhOb0xtTnZjbVV1YzJoaGNtUXVRV2RsYm5SVGFHRnlaRVJsYzJsbmJtRjBhVzl1QUFBQUFBQUFBQUVDQUFKTUFBdGpkWE4wYjIxVGFHRnlaSEVBZmdBQlRBQU5jM1JoYm1SaGNtUlRhR0Z5WkhRQVJFeHVaWFF2ZUhGb2N5OW1iR0Z6YUM5amIzSmxMM05vWVhKa0wwRm5aVzUwVTJoaGNtUkVaWE5wWjI1aGRHbHZiaVJUZEdGdVpHRnlaRUZuWlc1MFUyaGhjbVE3ZUhCMEFBaE5UMEpKVEVsVVdYQUFBQk9JZEFBRmJtOWtaVUZ4QUg0QU5RPT1xAH4AGHQIlHJPMEFCWE55QURCdVpYUXVlSEZvY3k1bWJHRnphQzUzWldKVGIyTnJaWFF1VjJWaVUyOWphMlYwVFdWemMyRm5hVzVuVTJoaGNtUUFBQUFBQUFBQUFnSUFBSGh5QUROdVpYUXVlSEZvY3k1bWJHRnphQzVqYjNKbExuTjFjSEJ2Y25RdVRtRnRaVUpoYzJWa1RXVnpjMkZuYVc1blUyaGhjbVFBTHJkSHVDRzZod0lBQUhoeUFESnVaWFF1ZUhGb2N5NW1iR0Z6YUM1amIzSmxMbk4xY0hCdmNuUXVRV0p6ZEhKaFkzUk5aWE56WVdkcGJtZFRhR0Z5WkpkVmxyZTNHMmVtQWdBQWVISUFLRzVsZEM1NGNXaHpMbVpzWVhOb0xtTnZjbVV1YzJoaGNtUXVRV2RsYm5SVGFHRnlaRU52Y21XTkQzM3BwdE1jN3dJQUExb0FDV2x6VW5WdWJtbHVaMHdBRW5Ob1lYSmtRMjl1Wm1sbmRYSmhkR2x2Ym5RQUoweHVaWFF2ZUhGb2N5OW1iR0Z6YUM5amIzSmxMM1YwYVd3dlRYVnNkR2xVY21WbFRXRndPMHdBRUhOb1lYSmtSR1Z6YVdkdVlYUnBiMjUwQURGTWJtVjBMM2h4YUhNdlpteGhjMmd2WTI5eVpTOXphR0Z5WkM5QloyVnVkRk5vWVhKa1JHVnphV2R1WVhScGIyNDdlSEFBYzNJQUpXNWxkQzU0Y1doekxtWnNZWE5vTG1OdmNtVXVkWFJwYkM1TmRXeDBhVlJ5WldWTllYQThpRGN4Vy83bHZBSUFCRWtBQm5CaFpFeGxia3dBQ25OcGJYQnNaVXRsZVhOMEFBOU1hbUYyWVM5MWRHbHNMMU5sZER0TUFBMXphVzVuYkdWMGIyNUxaWGx6Y1FCK0FBaE1BQWgwY21WbFMyVjVjM0VBZmdBSWVISUFKbTVsZEM1NGNXaHpMbVpzWVhOb0xtTnZjbVV1ZFhScGJDNU5kV3gwYVZaaGJIVmxUV0Z3amlNNyt6eksyMkVDQUFGTUFBcGlZV05yYVc1blRXRndkQUFQVEdwaGRtRXZkWFJwYkM5TllYQTdlSEJ6Y2dBWGFtRjJZUzUxZEdsc0xreHBibXRsWkVoaGMyaE5ZWEEwd0U1Y0VHekErd0lBQVZvQUMyRmpZMlZ6YzA5eVpHVnllSElBRVdwaGRtRXVkWFJwYkM1SVlYTm9UV0Z3QlFmYXdjTVdZTkVEQUFKR0FBcHNiMkZrUm1GamRHOXlTUUFKZEdoeVpYTm9iMnhrZUhBL1FBQUFBQUFBREhjSUFBQUFFQUFBQUFaMEFBUnVZVzFsYzNJQUUycGhkbUV1ZFhScGJDNUJjbkpoZVV4cGMzUjRnZElkbWNkaG5RTUFBVWtBQkhOcGVtVjRjQUFBQUFGM0JBQUFBQUYwQUFsdFpYTnpZV2RwYm1kNGRBQUpJMnh2WTJGc0xXbGtjM0VBZmdBUUFBQUFBWGNFQUFBQUFYUUFDaU0xTlRnMk16ZzJPRFo0ZEFBT0kyTmhkR1ZuYjNKNUxYUjVjR1Z6Y1FCK0FCQUFBQUFCZHdRQUFBQUJkQUFGYzJoaGNtUjRkQUFIY0dGamEyRm5aWE54QUg0QUVBQUFBQVozQkFBQUFBWjBBQWQwWlhOMGFXNW5kQUFXZEdWemRDNWpiMjF3YjNOcGRHVk5iMkpwYkdsMGVYRUFmZ0FiY1FCK0FCeHhBSDRBRzNFQWZnQWNlSFFBRFdsdUxXTnZiblJsZUhRdGIyWnpjUUIrQUJBQUFBQUVkd1FBQUFBRWRBQUxJekV3TWpNNE9USTVNamgwQUFzak1UYzBOelU0TlRneU5IUUFDeU14T0RNeE9UTXlOekkwZEFBTEl6RTNNRFUzTXpZd016ZDRkQUFKWTJ4aGMzTndZWFJvYzNFQWZnQVFBQUFBQVhjRUFBQUFBWFFBTUc1bGRDNTRjV2h6TG1ac1lYTm9MbmRsWWxOdlkydGxkQzVYWldKVGIyTnJaWFJOWlhOellXZHBibWRUYUdGeVpIaDRBQUFBQUE1emNnQVhhbUYyWVM1MWRHbHNMa3hwYm10bFpFaGhjMmhUWlhUWWJOZGFsZDBxSGdJQUFIaHlBQkZxWVhaaExuVjBhV3d1U0dGemFGTmxkTHBFaFpXV3VMYzBBd0FBZUhCM0RBQUFBQWcvUUFBQUFBQUFCbkVBZmdBUGNRQitBQk54QUg0QUZuRUFmZ0FaY1FCK0FCMXhBSDRBSTNoemNRQitBQ1ozREFBQUFBUS9RQUFBQUFBQUEzRUFmZ0FUY1FCK0FCWnhBSDRBSTNoemNRQitBQ1ozREFBQUFBRS9RQUFBQUFBQUFIaHpjZ0F2Ym1WMExuaHhhSE11Wm14aGMyZ3VZMjl5WlM1emFHRnlaQzVCWjJWdWRGTm9ZWEprUkdWemFXZHVZWFJwYjI0QUFBQUFBQUFBQVFJQUFrd0FDMk4xYzNSdmJWTm9ZWEprZEFBU1RHcGhkbUV2YkdGdVp5OVRkSEpwYm1jN1RBQU5jM1JoYm1SaGNtUlRhR0Z5WkhRQVJFeHVaWFF2ZUhGb2N5OW1iR0Z6YUM5amIzSmxMM05vWVhKa0wwRm5aVzUwVTJoaGNtUkVaWE5wWjI1aGRHbHZiaVJUZEdGdVpHRnlaRUZuWlc1MFUyaGhjbVE3ZUhCd2ZuSUFRbTVsZEM1NGNXaHpMbVpzWVhOb0xtTnZjbVV1YzJoaGNtUXVRV2RsYm5SVGFHRnlaRVJsYzJsbmJtRjBhVzl1SkZOMFlXNWtZWEprUVdkbGJuUlRhR0Z5WkFBQUFBQUFBQUFBRWdBQWVISUFEbXBoZG1FdWJHRnVaeTVGYm5WdEFBQUFBQUFBQUFBU0FBQjRjSFFBQ1UxRlUxTkJSMGxPUnc9PXEAfgAcdAdcck8wQUJYTnlBQmgwWlhOMGFXNW5Ma1ZqYUc5VVpYTjBhVzVuVTJoaGNtUklYdnVSQkxWYzJnSUFBa2tBQ1dWNGFYUkJablJsY2t3QUNXVjRhWFJVYVcxbGNuUUFFVXhxWVhaaEwzVjBhV3d2VkdsdFpYSTdlSElBS0c1bGRDNTRjV2h6TG1ac1lYTm9MbU52Y21VdWMyaGhjbVF1UVdkbGJuUlRhR0Z5WkVOdmNtV05EMzNwcHRNYzd3SUFBMW9BQ1dselVuVnVibWx1WjB3QUVuTm9ZWEprUTI5dVptbG5kWEpoZEdsdmJuUUFKMHh1WlhRdmVIRm9jeTltYkdGemFDOWpiM0psTDNWMGFXd3ZUWFZzZEdsVWNtVmxUV0Z3TzB3QUVITm9ZWEprUkdWemFXZHVZWFJwYjI1MEFERk1ibVYwTDNoeGFITXZabXhoYzJndlkyOXlaUzl6YUdGeVpDOUJaMlZ1ZEZOb1lYSmtSR1Z6YVdkdVlYUnBiMjQ3ZUhBQWMzSUFKVzVsZEM1NGNXaHpMbVpzWVhOb0xtTnZjbVV1ZFhScGJDNU5kV3gwYVZSeVpXVk5ZWEE4aURjeFcvN2x2QUlBQkVrQUJuQmhaRXhsYmt3QUNuTnBiWEJzWlV0bGVYTjBBQTlNYW1GMllTOTFkR2xzTDFObGREdE1BQTF6YVc1bmJHVjBiMjVMWlhsemNRQitBQWRNQUFoMGNtVmxTMlY1YzNFQWZnQUhlSElBSm01bGRDNTRjV2h6TG1ac1lYTm9MbU52Y21VdWRYUnBiQzVOZFd4MGFWWmhiSFZsVFdGd2ppTTcrenpLMjJFQ0FBRk1BQXBpWVdOcmFXNW5UV0Z3ZEFBUFRHcGhkbUV2ZFhScGJDOU5ZWEE3ZUhCemNnQVhhbUYyWVM1MWRHbHNMa3hwYm10bFpFaGhjMmhOWVhBMHdFNWNFR3pBK3dJQUFWb0FDMkZqWTJWemMwOXlaR1Z5ZUhJQUVXcGhkbUV1ZFhScGJDNUlZWE5vVFdGd0JRZmF3Y01XWU5FREFBSkdBQXBzYjJGa1JtRmpkRzl5U1FBSmRHaHlaWE5vYjJ4a2VIQS9RQUFBQUFBQURIY0lBQUFBRUFBQUFBWjBBQVJ1WVcxbGMzSUFFMnBoZG1FdWRYUnBiQzVCY25KaGVVeHBjM1I0Z2RJZG1jZGhuUU1BQVVrQUJITnBlbVY0Y0FBQUFBRjNCQUFBQUFGMEFBdEZZMmh2VkdWemRHbHVaM2gwQUFramJHOWpZV3d0YVdSemNRQitBQThBQUFBQmR3UUFBQUFCZEFBTEl6RXhORGt6TVRrMk5qUjRkQUFPSTJOaGRHVm5iM0o1TFhSNWNHVnpjUUIrQUE4QUFBQUJkd1FBQUFBQmRBQUZjMmhoY21SNGRBQUhjR0ZqYTJGblpYTnhBSDRBRHdBQUFBWjNCQUFBQUFaMEFBZDBaWE4wYVc1bmRBQVdkR1Z6ZEM1amIyMXdiM05wZEdWTmIySnBiR2wwZVhFQWZnQWFjUUIrQUJ0eEFINEFHbkVBZmdBYmVIUUFEV2x1TFdOdmJuUmxlSFF0YjJaemNRQitBQThBQUFBRWR3UUFBQUFFZEFBTEl6RXdNak00T1RJNU1qaDBBQXNqTVRjME56VTROVGd5TkhRQUN5TXhPRE14T1RNeU56STBkQUFMSXpFM01EVTNNell3TXpkNGRBQUpZMnhoYzNOd1lYUm9jM0VBZmdBUEFBQUFBWGNFQUFBQUFYUUFHSFJsYzNScGJtY3VSV05vYjFSbGMzUnBibWRUYUdGeVpIaDRBQUFBQUE1emNnQVhhbUYyWVM1MWRHbHNMa3hwYm10bFpFaGhjMmhUWlhUWWJOZGFsZDBxSGdJQUFIaHlBQkZxWVhaaExuVjBhV3d1U0dGemFGTmxkTHBFaFpXV3VMYzBBd0FBZUhCM0RBQUFBQWcvUUFBQUFBQUFCbkVBZmdBT2NRQitBQkp4QUg0QUZYRUFmZ0FZY1FCK0FCeHhBSDRBSW5oemNRQitBQ1YzREFBQUFBUS9RQUFBQUFBQUEzRUFmZ0FTY1FCK0FCVnhBSDRBSW5oemNRQitBQ1YzREFBQUFBRS9RQUFBQUFBQUFIaHpjZ0F2Ym1WMExuaHhhSE11Wm14aGMyZ3VZMjl5WlM1emFHRnlaQzVCWjJWdWRGTm9ZWEprUkdWemFXZHVZWFJwYjI0QUFBQUFBQUFBQVFJQUFrd0FDMk4xYzNSdmJWTm9ZWEprZEFBU1RHcGhkbUV2YkdGdVp5OVRkSEpwYm1jN1RBQU5jM1JoYm1SaGNtUlRhR0Z5WkhRQVJFeHVaWFF2ZUhGb2N5OW1iR0Z6YUM5amIzSmxMM05vWVhKa0wwRm5aVzUwVTJoaGNtUkVaWE5wWjI1aGRHbHZiaVJUZEdGdVpHRnlaRUZuWlc1MFUyaGhjbVE3ZUhCMEFBOTBaWE4wTDIxdmJtbDBiM0pwYm1kdy8vLy8vM0E9eA==\"}"}].
+. [ node:nodeA.0         ] registered an entity of type [AGENT]. Provided name was [agentA1].
+. [ node:nodeA.0         ] Starting agent [agentA1] after moving...
+. [ testing-agentA1 >>>> ] testing started.
+> [ agentA1~             ] agent [agentA1] has shards [{TESTING=testing.PingTestShard@76282056, MOBILITY=test.compositeMobility.MobilityTestShard@40d36914, messaging=net.xqhs.flash.webSocket.WebSocketMessagingShard@481fefc9, test/monitoring=testing.EchoTestingShard@7f024c0c}] after deserialization in order: [[messaging, test/monitoring, MOBILITY, TESTING]]
+> [ agentA1~             ] agent has moved successfully; migration managed by [agent]
+> [ agentA1~             ] Agent state is soon [STARTING][transient]
+. [ pylonA               ] Registered entity [agentA1]/[net.xqhs.flash.core.support.AbstractMessagingShard$1@4261ba97] with this pylon [net.xqhs.flash.webSocket.WebSocketPylon@3941a79c]: [{"nodeName":"nodeA","entityName":"agentA1"}]
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AGENT_START], TO_FROM_TRANSIENT=[MOVE]}]
+. [ websocket-server     ] Registered entity [agentA1] on [nodeA].
+. [ websocket-server     ] entities: [[nodeB, agentA2, agentB1, agentA1, nodeA]] ; nodes: [[nodeA, nodeB]] ; node-entities: [{nodeA=[nodeA, agentA2, agentA1], nodeB=[nodeB, agentB1]}]
+> [ agentA1~             ] state is now [RUNNING]
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AFTER_MOVE]}]
+Sending the message....
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeA","destination":"agentB1\/pong","source":"agentA1\/ping","content":"ping-no 7"}].
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeA","destination":"agentA2\/pong","source":"agentA1\/ping","content":"ping-no 7"}].
+> [ testing-agentB1 >>>> ] agent [agentB1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 7], destination-element=[pong], destination-complete=[agentB1/pong], source-element=[agentA1, ping]}]
+> [ testing-agentA2 >>>> ] agent [agentA2] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 7], destination-element=[pong], destination-complete=[agentA2/pong], source-element=[agentA1, ping]}]
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeB","destination":"agentA1\/ping","source":"agentB1\/pong","content":"ping-no 7 reply"}].
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeA","destination":"agentA1\/ping","source":"agentA2\/pong","content":"ping-no 7 reply"}].
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 7 reply], destination-element=[ping], destination-complete=[agentA1/ping], source-element=[agentB1, pong]}]
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 7 reply], destination-element=[ping], destination-complete=[agentA1/ping], source-element=[agentA2, pong]}]
+Sending the message....
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeA","destination":"agentB1\/pong","source":"agentA1\/ping","content":"ping-no 8"}].
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeA","destination":"agentA2\/pong","source":"agentA1\/ping","content":"ping-no 8"}].
+> [ testing-agentB1 >>>> ] agent [agentB1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 8], destination-element=[pong], destination-complete=[agentB1/pong], source-element=[agentA1, ping]}]
+> [ testing-agentA2 >>>> ] agent [agentA2] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 8], destination-element=[pong], destination-complete=[agentA2/pong], source-element=[agentA1, ping]}]
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeB","destination":"agentA1\/ping","source":"agentB1\/pong","content":"ping-no 8 reply"}].
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeA","destination":"agentA1\/ping","source":"agentA2\/pong","content":"ping-no 8 reply"}].
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 8 reply], destination-element=[ping], destination-complete=[agentA1/ping], source-element=[agentB1, pong]}]
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 8 reply], destination-element=[ping], destination-complete=[agentA1/ping], source-element=[agentA2, pong]}]
+Sending the message....
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeA","destination":"agentB1\/pong","source":"agentA1\/ping","content":"ping-no 9"}].
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeA","destination":"agentA2\/pong","source":"agentA1\/ping","content":"ping-no 9"}].
+> [ testing-agentB1 >>>> ] agent [agentB1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 9], destination-element=[pong], destination-complete=[agentB1/pong], source-element=[agentA1, ping]}]
+> [ testing-agentA2 >>>> ] agent [agentA2] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 9], destination-element=[pong], destination-complete=[agentA2/pong], source-element=[agentA1, ping]}]
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeB","destination":"agentA1\/ping","source":"agentB1\/pong","content":"ping-no 9 reply"}].
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeA","destination":"agentA1\/ping","source":"agentA2\/pong","content":"ping-no 9 reply"}].
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 9 reply], destination-element=[ping], destination-complete=[agentA1/ping], source-element=[agentB1, pong]}]
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 9 reply], destination-element=[ping], destination-complete=[agentA1/ping], source-element=[agentA2, pong]}]
+Sending the message....
+> [ agentA1~             ] Agent state is soon [STOPPING][]
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeA","destination":"agentB1\/pong","source":"agentA1\/ping","content":"ping-last 10"}].
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AGENT_STOP]}]
+> [ testing-agentA1 >>>> ] log exit.
+. [ pylonA               ] Unregistered entity [agentA1] from this pylon [net.xqhs.flash.webSocket.WebSocketPylon@3941a79c]: [{"nodeName":"nodeA","entityName":"agentA1","unregister":"unregister"}]
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeA","destination":"agentA2\/pong","source":"agentA1\/ping","content":"ping-last 10"}].
+> [ agentA1~             ] state is now [STOPPED]
+> [ testing-agentB1 >>>> ] agent [agentB1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-last 10], destination-element=[pong], destination-complete=[agentB1/pong], source-element=[agentA1, ping]}]
+> [ agentA1~             ] log exit.
+. [ websocket-server     ] Unregistered entity [agentA1] on [nodeA].
+> [ agentB1#             ] Agent state is soon [STOPPING][]
+. [ websocket-server     ] entities: [[nodeB, agentA2, agentB1, nodeA]] ; nodes: [[nodeA, nodeB]] ; node-entities: [{nodeA=[nodeA, agentA2], nodeB=[nodeB, agentB1]}]
+> [ testing-agentA2 >>>> ] agent [agentA2] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-last 10], destination-element=[pong], destination-complete=[agentA2/pong], source-element=[agentA1, ping]}]
+> [ testing-agentB1 >>>> ] agent [agentB1] event: [{EVENT_TYPE=[AGENT_STOP]}]
+# [ websocket-server     ] Failed to find websocket for the entity [agentA1].
+> [ testing-agentB1 >>>> ] log exit.
+. [ websocket-server     ] entities: [[nodeB, agentA2, agentB1, nodeA]] ; nodes: [[nodeA, nodeB]] ; node-entities: [{nodeA=[nodeA, agentA2], nodeB=[nodeB, agentB1]}]
+> [ agentA2#             ] Agent state is soon [STOPPING][]
+. [ pylonB               ] Unregistered entity [agentB1] from this pylon [net.xqhs.flash.webSocket.WebSocketPylon@7ab2bfe1]: [{"nodeName":"nodeB","entityName":"agentB1","unregister":"unregister"}]
+> [ testing-agentA2 >>>> ] agent [agentA2] event: [{EVENT_TYPE=[AGENT_STOP]}]
+> [ agentB1#             ] state is now [STOPPED]
+> [ testing-agentA2 >>>> ] log exit.
+# [ websocket-server     ] Failed to find websocket for the entity [agentA1].
+> [ agentB1#             ] log exit.
+. [ websocket-server     ] Unregistered entity [agentB1] on [nodeB].
+. [ websocket-server     ] entities: [[nodeB, agentA2, nodeA]] ; nodes: [[nodeA, nodeB]] ; node-entities: [{nodeA=[nodeA, agentA2], nodeB=[nodeB]}]
+. [ pylonA               ] Unregistered entity [agentA2] from this pylon [net.xqhs.flash.webSocket.WebSocketPylon@3941a79c]: [{"nodeName":"nodeA","entityName":"agentA2","unregister":"unregister"}]
+. [ websocket-server     ] entities: [[nodeB, agentA2, nodeA]] ; nodes: [[nodeA, nodeB]] ; node-entities: [{nodeA=[nodeA, agentA2], nodeB=[nodeB]}]
+> [ agentA2#             ] state is now [STOPPED]
+> [ agentA2#             ] log exit.
+. [ websocket-server     ] Unregistered entity [agentA2] on [nodeA].
+. [ websocket-server     ] entities: [[nodeB, nodeA]] ; nodes: [[nodeA, nodeB]] ; node-entities: [{nodeA=[nodeA], nodeB=[nodeB]}]
+> [ node:nodeB.0         ] Node [nodeB] will stop due to no more active entitites running. Active entity type list was [[agent]].
+> [ node:nodeA.0         ] Node [nodeA] will stop due to no more active entitites running. Active entity type list was [[agent]].
+> [ node:nodeA.0         ] Stopping node [nodeA] with entities [[net.xqhs.flash.webSocket.WebSocketPylon@3941a79c, net.xqhs.flash.local.LocalPylon@9807454, agentA2, agentA1]].
+> [ node:nodeB.0         ] Stopping node [nodeB] with entities [[net.xqhs.flash.webSocket.WebSocketPylon@7ab2bfe1, net.xqhs.flash.local.LocalPylon@b1a58a3, agentB1]].
+. [ node:nodeA.0         ] stopping an entity...
+. [ node:nodeB.0         ] stopping an entity...
+. [ default              ] [default] stopped
+. [ default              ] [default] stopped
+> [ default              ] Stopped
+> [ default              ] Stopped
+. [ node:nodeB.0         ] entity stopped successfully.
+. [ node:nodeA.0         ] entity stopped successfully.
+. [ node:nodeA.0         ] stopping an entity...
+. [ node:nodeB.0         ] stopping an entity...
+. [ pylonA               ] [pylonA] stopped
+. [ pylonB               ] [pylonB] stopped
+* [ pylonB               ] Closed with exit code 1000
+> [ websocket-server     ] [org.java_websocket.WebSocketImpl@11436080] closed with exit code [1001]
+> [ pylonB               ] Stopped
+. [ node:nodeB.0         ] entity stopped successfully.
+> [ websocket-server     ] [org.java_websocket.WebSocketImpl@511e02f1] closed with exit code [1001]
+* [ pylonA               ] Closed with exit code 1001
+# [ pylonB               ] Failed to send message:[org.java_websocket.WebSocketImpl.send(WebSocketImpl.java:630)][org.java_websocket.WebSocketImpl.send(WebSocketImpl.java:607)][org.java_websocket.client.WebSocketClient.send(WebSocketClient.java:344)][net.xqhs.flash.webSocket.WebSocketPylon$1.send(WebSocketPylon.java:242)][net.xqhs.flash.core.support.AbstractMessagingShard.sendMessage(AbstractMessagingShard.java:196)][net.xqhs.flash.core.node.Node.sendMessage(Node.java:402)][net.xqhs.flash.core.node.Node.sendStatusUpdate(Node.java:417)][net.xqhs.flash.core.node.Node.stop(Node.java:283)][net.xqhs.flash.core.node.Node.checkRunning(Node.java:389)][net.xqhs.flash.core.node.Node$1.run(Node.java:260)][java.util.TimerThread.mainLoop(Timer.java:555)][java.util.TimerThread.run(Timer.java:505)]
+> [ node:nodeB.0         ] Node [nodeB] stopped.
+> [ websocket-server     ] server successfully stopped.
+> [ pylonA               ] Stopped
+. [ node:nodeA.0         ] entity stopped successfully.
+# [ pylonA               ] Failed to send message:[org.java_websocket.WebSocketImpl.send(WebSocketImpl.java:630)][org.java_websocket.WebSocketImpl.send(WebSocketImpl.java:607)][org.java_websocket.client.WebSocketClient.send(WebSocketClient.java:344)][net.xqhs.flash.webSocket.WebSocketPylon$1.send(WebSocketPylon.java:242)][net.xqhs.flash.core.support.AbstractMessagingShard.sendMessage(AbstractMessagingShard.java:196)][net.xqhs.flash.core.node.Node.sendMessage(Node.java:402)][net.xqhs.flash.core.node.Node.sendStatusUpdate(Node.java:417)][net.xqhs.flash.core.node.Node.stop(Node.java:283)][net.xqhs.flash.core.node.Node.checkRunning(Node.java:389)][net.xqhs.flash.core.node.Node$1.run(Node.java:260)][java.util.TimerThread.mainLoop(Timer.java:555)][java.util.TimerThread.run(Timer.java:505)]
+> [ node:nodeA.0         ] Node [nodeA] stopped.
+
+Process finished with exit code 0

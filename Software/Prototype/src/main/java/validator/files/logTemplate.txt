@@ -1,0 +1,9 @@
+Sending the message....
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeA","destination":"agentB1\/pong","source":"agentA1\/ping","content":"ping-no 7"}].
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeA","destination":"agentA2\/pong","source":"agentA1\/ping","content":"ping-no 7"}].
+> [ testing-agentB1 >>>> ] agent [agentB1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 7], destination-element=[pong], destination-complete=[agentB1/pong], source-element=[agentA1, ping]}]
+> [ testing-agentA2 >>>> ] agent [agentA2] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 7], destination-element=[pong], destination-complete=[agentA2/pong], source-element=[agentA1, ping]}]
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeB","destination":"agentA1\/ping","source":"agentB1\/pong","content":"ping-no 7 reply"}].
+. [ websocket-server     ] Sent to agent: [{"nodeName":"nodeA","destination":"agentA1\/ping","source":"agentA2\/pong","content":"ping-no 7 reply"}].
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 7 reply], destination-element=[ping], destination-complete=[agentA1/ping], source-element=[agentB1, pong]}]
+> [ testing-agentA1 >>>> ] agent [agentA1] event: [{EVENT_TYPE=[AGENT_WAVE], content=[ping-no 7 reply], destination-element=[ping], destination-complete=[agentA1/ping], source-element=[agentA2, pong]}]
